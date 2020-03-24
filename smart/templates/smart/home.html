@@ -1,0 +1,137 @@
+
+{% extends "smart/header.html" %}
+<html>
+<head>
+    {% load static %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+     <link rel="stylesheet"  href="{% static 'style.css' %}"  type ='text/css'>
+    <link rel="stylesheet"  href="{% static 'css/bootstrap.min.css' %}"  type ='text/css'>
+
+</head>
+{% block content%}
+
+<h6>Lets write a story by doing an intelligent search</h6>
+
+<ul>
+    {% for todo_item in all_items %}
+    <li>{{ todo_item.content }}</li>
+    {% endfor %}
+</ul>
+
+<!--<form action="/newsearch/"  class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false" style="display: inline;" method="post">{% csrf_token %}-->
+
+<!--&lt;!&ndash;    <input type="text" name="content"/>&ndash;&gt;-->
+<!--    <button type="submit" />-->
+<!--</form>-->
+
+
+
+
+
+
+
+<button action="/smart/search/"  onclick="window.location.href='/smart/search/' " class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  style="display: inline;" >
+   Create New Search
+  </button>
+
+
+ <button class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  style="display: inline;">
+    Extend Existing Search
+  </button>
+<button class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  style="display: inline;">
+    Copy and Rename Existing Search
+  </button>
+
+<br>
+<br>
+
+<button class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  >
+    Save
+  </button>
+<button class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  style="display: inline;">
+    Save As...
+  </button>
+
+<button class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  style="display: inline;">
+   Run Search
+  </button>
+
+
+
+
+<!--<h4> Search by: </h4>-->
+
+<!--<form action="/todo"  style="display: inline, padding: 100px;">-->
+<!--<select name="MPs" multiple>-->
+<!--  <option value="Theresa">Theresa</option>-->
+<!--  <option value="Dianne">Dianne</option>-->
+<!--  <option value="Judith">Judith</option>-->
+<!--  <option value="Nicola">Nicola</option>-->
+<!--</select>-->
+<!--<input type="submit">-->
+<!--</form>-->
+
+<!-- <div id="list1" class="dropdown-check-list" tabindex="100">-->
+<!--        <span class="anchor">Select Keywords</span>-->
+<!--        <ul class="items">-->
+<!--            <li><input type="checkbox" />bitch </li>-->
+<!--            <li><input type="checkbox" />slag</li>-->
+<!--            <li><input type="checkbox" />whore </li>-->
+<!--            <li><input type="checkbox" />cunt</li>-->
+<!--            <li><input type="checkbox" />cow</li>-->
+<!--            <li><input type="checkbox" />bint</li>-->
+<!--            <li><input type="checkbox" />slut </li>-->
+<!--            <li><input type="checkbox" />shag </li>-->
+<!--            <li><input type="checkbox" />tart </li>-->
+<!--            <li><input type="checkbox" />hag </li>-->
+<!--            <li><input type="checkbox" />nag </li>-->
+<!--            <li><input type="checkbox" />witch </li>-->
+<!--            <li><input type="checkbox" />lezza </li>-->
+<!--            <li><input type="checkbox" />lesbo </li>-->
+<!--            <li><input type="checkbox" />dyke </li>-->
+<!--            <li><input type="checkbox" />trollop </li>-->
+<!--            <li><input type="checkbox" />cocktease </li>-->
+<!--            <li><input type="checkbox" />conchuda </li>-->
+<!--            <li><input type="checkbox" />feminazi </li>-->
+<!--            <li><input type="checkbox" />gash </li>-->
+<!--            <li><input type="checkbox" />ho </li>-->
+<!--            <li><input type="checkbox" />hoe </li>-->
+<!--            <li><input type="checkbox" />hoodrat </li>-->
+<!--            <li><input type="checkbox" />kunt </li>-->
+
+<!--        </ul>-->
+<!--    </div>-->
+
+<!--    <script type="text/javascript">-->
+
+<!--        var checkList = document.getElementById('list1');-->
+<!--        checkList.getElementsByClassName('anchor')[0].onclick = function (evt) {-->
+<!--            if (checkList.classList.contains('visible'))-->
+<!--                checkList.classList.remove('visible');-->
+<!--            else-->
+<!--                checkList.classList.add('visible');-->
+<!--        }-->
+
+<!--        checkList.onblur = function(evt) {-->
+<!--            checkList.classList.remove('visible');-->
+<!--        }-->
+<!--    </script>-->
+
+
+
+
+
+
+
+
+{% endblock %}
+</html>

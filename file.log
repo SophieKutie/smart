@@ -1,0 +1,1026 @@
+DEBUG:root:Started
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+DEBUG:root:Started
+INFO:django.utils.autoreload:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+DEBUG:asyncio:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:not right
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\mysite\settings.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\mysite\settings.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\mysite\settings.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\mysite\settings.py changed, reloading.
+DEBUG:Using selector: SelectSelector
+DEBUG:Started
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /newsearch/ HTTP/1.1" 200 3509
+INFO:"POST /newsearch/ HTTP/1.1" 200 3509
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /newsearch/ HTTP/1.1" 200 3509
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /
+WARNING:"GET / HTTP/1.1" 404 2864
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 3509
+INFO:"POST /newsearch/ HTTP/1.1" 200 3509
+INFO:"GET /newsearch/ HTTP/1.1" 200 3509
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /
+WARNING:"GET / HTTP/1.1" 404 2864
+WARNING:Not Found: /favicon.ico
+WARNING:"GET /favicon.ico HTTP/1.1" 404 2915
+INFO:"GET /newsearch/ HTTP/1.1" 200 3509
+INFO:"GET /static/smart/img/SMART.png HTTP/1.1" 200 143485
+INFO:"GET /static/smart/css/bootstrap.min.css HTTP/1.1" 200 159515
+INFO:"GET /newsearch/ HTTP/1.1" 200 7346
+INFO:"GET /newsearch/ HTTP/1.1" 200 7347
+INFO:"GET /newsearch/ HTTP/1.1" 200 7319
+INFO:"GET /newsearch/ HTTP/1.1" 200 7280
+INFO:"GET /newsearch/ HTTP/1.1" 200 7287
+INFO:"GET /newsearch/ HTTP/1.1" 200 7280
+INFO:"GET /newsearch/ HTTP/1.1" 200 7280
+INFO:"GET /newsearch/ HTTP/1.1" 200 7270
+INFO:"GET /newsearch/ HTTP/1.1" 200 7238
+INFO:"GET /newsearch/ HTTP/1.1" 200 6977
+INFO:"GET /newsearch/ HTTP/1.1" 200 6977
+INFO:"POST /newsearch/ HTTP/1.1" 200 6977
+INFO:"POST /newsearch/ HTTP/1.1" 200 6977
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\mysite\settings.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /
+WARNING:"GET / HTTP/1.1" 404 2864
+WARNING:Not Found: /favicon.ico
+WARNING:"GET /favicon.ico HTTP/1.1" 404 2915
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6969
+INFO:"POST /newsearch/ HTTP/1.1" 200 6969
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /newsearch/ HTTP/1.1" 200 6969
+INFO:"POST /newsearch/ HTTP/1.1" 200 6969
+INFO:"POST /newsearch/ HTTP/1.1" 200 6969
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\admin.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+DEBUG:Started
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /admin/ HTTP/1.1" 200 5035
+INFO:"GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+INFO:"GET /static/admin/css/responsive.css HTTP/1.1" 200 18052
+INFO:"GET /static/admin/css/base.css HTTP/1.1" 200 16479
+INFO:"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO:"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 383
+INFO:"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 334
+INFO:"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO:"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO:"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 2978
+INFO:"GET /static/admin/css/changelists.css HTTP/1.1" 200 6326
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+INFO:"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+INFO:"GET /static/admin/js/core.js HTTP/1.1" 200 6111
+INFO:"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+INFO:"GET /static/admin/js/urlify.js HTTP/1.1" 200 8956
+INFO:"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6906
+INFO:"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+INFO:"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 280364
+INFO:"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 334
+INFO:"GET /admin/smart/document/add/ HTTP/1.1" 200 4214
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+INFO:"GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+INFO:"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+INFO:"GET /static/admin/css/widgets.css HTTP/1.1" 200 10322
+ERROR:Internal Server Error: /admin/smart/document/add/
+Traceback (most recent call last):
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\contrib\admin\options.py", line 1640, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\contrib\admin\options.py", line 1521, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\contrib\admin\options.py", line 1571, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\contrib\admin\options.py", line 806, in log_addition
+    object_repr=str(object),
+  File "C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py", line 26, in __str__
+    return self.pub_date >= timezone.now() - \
+AttributeError: 'Document' object has no attribute 'pub_date'
+ERROR:"POST /admin/smart/document/add/ HTTP/1.1" 500 119945
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /admin/smart/document/add/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 4357
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 439
+INFO:"GET /admin/smart/document/1/change/ HTTP/1.1" 200 4525
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /media/miso.csv HTTP/1.1" 200 138
+INFO:"GET /admin/smart/ HTTP/1.1" 200 3752
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/smart/document/1/change/ HTTP/1.1" 200 4525
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/smart/document/1/change/ HTTP/1.1" 200 4525
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/smart/document/1/change/ HTTP/1.1" 200 4525
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /
+WARNING:"GET / HTTP/1.1" 404 2864
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/ HTTP/1.1" 200 5368
+INFO:"GET /admin/smart/document/1/change/ HTTP/1.1" 200 4525
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/1/change/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 4359
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/1/change/ HTTP/1.1" 200 4525
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/1/change/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 4359
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/1/change/ HTTP/1.1" 200 4537
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/1/change/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/add/ HTTP/1.1" 200 4452
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/add/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/add/ HTTP/1.1" 200 4450
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/add/ HTTP/1.1" 200 4357
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/add/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/add/ HTTP/1.1" 200 4450
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/add/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5057
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/4/change/ HTTP/1.1" 200 4529
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 4857
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/4/change/ HTTP/1.1" 200 4529
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/4/change/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/add/ HTTP/1.1" 200 4452
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/add/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/add/ HTTP/1.1" 200 4450
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/add/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/add/ HTTP/1.1" 200 4450
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/add/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/add/ HTTP/1.1" 200 4450
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/add/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5989
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/1/change/ HTTP/1.1" 200 4537
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+WARNING:Not Found: /adn/
+WARNING:"GET /adn/ HTTP/1.1" 404 2894
+INFO:"GET /admin/ HTTP/1.1" 200 8077
+INFO:"GET /admin/ HTTP/1.1" 200 8077
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5789
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/8/change/ HTTP/1.1" 200 4545
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/8/change/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5991
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/7/change/ HTTP/1.1" 200 4553
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/7/change/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5991
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/6/change/ HTTP/1.1" 200 4541
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/6/change/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5991
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/5/change/ HTTP/1.1" 200 4541
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /admin/smart/document/5/change/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5991
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/8/change/ HTTP/1.1" 200 4545
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/8/delete/ HTTP/1.1" 200 3039
+INFO:"GET /static/admin/js/cancel.js HTTP/1.1" 200 409
+INFO:"POST /admin/smart/document/8/delete/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5712
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/7/change/ HTTP/1.1" 200 4553
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/7/delete/ HTTP/1.1" 200 3039
+INFO:"POST /admin/smart/document/7/delete/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5479
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/6/change/ HTTP/1.1" 200 4541
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/6/delete/ HTTP/1.1" 200 3039
+INFO:"POST /admin/smart/document/6/delete/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5246
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/5/change/ HTTP/1.1" 200 4541
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/5/delete/ HTTP/1.1" 200 3039
+INFO:"POST /admin/smart/document/5/delete/ HTTP/1.1" 302 0
+INFO:"GET /admin/smart/document/ HTTP/1.1" 200 5013
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"GET /admin/smart/document/4/change/ HTTP/1.1" 200 4529
+INFO:"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO:"POST /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /
+WARNING:"GET / HTTP/1.1" 404 2864
+WARNING:Not Found: /favicon.ico
+WARNING:"GET /favicon.ico HTTP/1.1" 404 2915
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /static/smart/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO:"GET /static/smart/img/SMART.png HTTP/1.1" 304 0
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /
+WARNING:"GET / HTTP/1.1" 404 2864
+WARNING:Not Found: /favicon.ico
+WARNING:"GET /favicon.ico HTTP/1.1" 404 2915
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /static/smart/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO:"GET /static/smart/img/SMART.png HTTP/1.1" 304 0
+INFO:"GET /newsearch/ HTTP/1.1" 200 6729
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /newsearch/ HTTP/1.1" 200 7056
+INFO:"GET /static/smart/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO:"GET /static/smart/img/SMART.png HTTP/1.1" 304 0
+INFO:"GET /newsearch/ HTTP/1.1" 200 7063
+INFO:"POST /newsearch/ HTTP/1.1" 200 7063
+INFO:"POST /newsearch/ HTTP/1.1" 200 7045
+INFO:"POST /newsearch/ HTTP/1.1" 200 7063
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /
+WARNING:"GET / HTTP/1.1" 404 2864
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /
+WARNING:"GET / HTTP/1.1" 404 2864
+WARNING:Not Found: /favicon.ico
+WARNING:"GET /favicon.ico HTTP/1.1" 404 2915
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 7093
+INFO:"GET /static/smart/css/bootstrap.min.css.map HTTP/1.1" 200 641867
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\models.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+WARNING:Not Found: /favicon.ico
+WARNING:"GET /favicon.ico HTTP/1.1" 404 2915
+INFO:"GET /newsearch/ HTTP/1.1" 200 7093
+INFO:Watching for file changes with StatReloader
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /
+WARNING:"GET / HTTP/1.1" 404 2864
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:"POST /newsearch/ HTTP/1.1" 200 7093
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\mysite\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\mysite\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+WARNING:Not Found: /smart/newsearch
+WARNING:"GET /smart/newsearch HTTP/1.1" 404 2985
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\mysite\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /smart/newsearch
+WARNING:"GET /smart/newsearch HTTP/1.1" 404 2983
+WARNING:Not Found: /smart/newsearch
+WARNING:"GET /smart/newsearch HTTP/1.1" 404 2983
+INFO:"GET /smart/search HTTP/1.1" 301 0
+ERROR:Internal Server Error: /smart/search/
+Traceback (most recent call last):
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py", line 56, in search
+    form = SearchForm()
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\forms\models.py", line 286, in __init__
+    raise ValueError('ModelForm has no model class specified.')
+ValueError: ModelForm has no model class specified.
+ERROR:"GET /smart/search/ HTTP/1.1" 500 75303
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 8204
+WARNING:Not Found: /newsearch/
+WARNING:"POST /newsearch/ HTTP/1.1" 404 2202
+WARNING:Not Found: /smart/search/search/
+WARNING:"POST /smart/search/search/ HTTP/1.1" 404 2999
+WARNING:Not Found: /smart/search/search/
+WARNING:"POST /smart/search/search/ HTTP/1.1" 404 2999
+WARNING:Not Found: /smart/search/search/
+WARNING:"POST /smart/search/search/ HTTP/1.1" 404 2999
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 7927
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 8204
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 8181
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 8333
+DEBUG:Started
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 8333
+WARNING:Not Found: /smart/search/search/
+WARNING:"POST /smart/search/search/ HTTP/1.1" 404 2999
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /contact/
+WARNING:"GET /contact/ HTTP/1.1" 404 2195
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 8333
+WARNING:Not Found: /smart/search/search/
+WARNING:"POST /smart/search/search/ HTTP/1.1" 404 3185
+WARNING:Not Found: /smart/search/search/
+WARNING:"POST /smart/search/search/ HTTP/1.1" 404 3185
+WARNING:Not Found: /smart/search/search/
+WARNING:"POST /smart/search/search/ HTTP/1.1" 404 3185
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /smart/search/search/
+WARNING:"POST /smart/search/search/ HTTP/1.1" 404 3185
+INFO:"GET /smart/search/ HTTP/1.1" 200 8333
+WARNING:Not Found: /smart/search/search/
+WARNING:"POST /smart/search/search/ HTTP/1.1" 404 3185
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 9170
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 3203
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 2850
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 2850
+INFO:"GET /smart/search/ HTTP/1.1" 200 9170
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 2850
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 2850
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 2850
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 2850
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 2850
+INFO:"GET /smart/search/ HTTP/1.1" 200 9170
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 2850
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9336
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9336
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9336
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9334
+WARNING:Not Found: /smart/search/goingtwitter/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/goingtwitter/ HTTP/1.1" 404 2896
+WARNING:Not Found: /smart/search/goingtwitter/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/goingtwitter/ HTTP/1.1" 404 2896
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+INFO:"POST /smart/search/ HTTP/1.1" 200 9313
+INFO:"POST /smart/search/ HTTP/1.1" 200 9313
+INFO:"POST /smart/search/ HTTP/1.1" 200 9313
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+INFO:"POST /smart/search/ HTTP/1.1" 200 9313
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+WARNING:Not Found: /smart/newsearch
+WARNING:"GET /smart/newsearch HTTP/1.1" 404 2823
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+INFO:"POST /smart/search/ HTTP/1.1" 200 9307
+INFO:"POST /smart/search/ HTTP/1.1" 200 9307
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /smart/search/ HTTP/1.1" 200 9307
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+WARNING:Not Found: /smart/newsearch
+WARNING:"GET /smart/newsearch HTTP/1.1" 404 2823
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+INFO:"POST /smart/search/ HTTP/1.1" 200 9311
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+WARNING:Not Found: /smart/newsearch
+WARNING:"GET /smart/newsearch HTTP/1.1" 404 2823
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+INFO:"POST /smart/search/ HTTP/1.1" 200 9309
+INFO:"POST /smart/search/ HTTP/1.1" 200 9309
+INFO:"POST /smart/search/ HTTP/1.1" 200 9309
+INFO:"POST /smart/search/ HTTP/1.1" 200 9309
+INFO:"POST /smart/search/ HTTP/1.1" 200 9309
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 9147
+INFO:"POST /smart/search/ HTTP/1.1" 200 9311
+INFO:"POST /smart/search/ HTTP/1.1" 200 9311
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+INFO:"POST /smart/search/ HTTP/1.1" 200 9317
+WARNING:Not Found: /contact/
+WARNING:"GET /contact/ HTTP/1.1" 404 2195
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /smart/search/ HTTP/1.1" 200 9317
+INFO:"POST /smart/search/ HTTP/1.1" 200 9317
+INFO:"POST /smart/search/ HTTP/1.1" 200 9317
+INFO:"GET /smart/search/ HTTP/1.1" 200 9153
+INFO:"GET /smart/search/ HTTP/1.1" 200 9153
+INFO:"POST /smart/search/ HTTP/1.1" 200 9317
+INFO:"POST /smart/search/ HTTP/1.1" 200 9317
+INFO:"POST /smart/search/ HTTP/1.1" 200 9317
+INFO:"GET /smart/ HTTP/1.1" 200 7399
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /smart/newsearch/
+WARNING:"GET /smart/newsearch/ HTTP/1.1" 404 2819
+INFO:"GET /smart/search/ HTTP/1.1" 200 9153
+INFO:"POST /smart/search/ HTTP/1.1" 200 9295
+INFO:"POST /smart/search/ HTTP/1.1" 200 9295
+INFO:"POST /smart/search/ HTTP/1.1" 200 9295
+INFO:"POST /smart/search/ HTTP/1.1" 200 9295
+WARNING:Not Found: /smart/newsearch/
+WARNING:"GET /smart/newsearch/ HTTP/1.1" 404 2819
+INFO:"GET /smart/search/ HTTP/1.1" 200 9153
+WARNING:Not Found: /smart/newsearch/
+WARNING:"GET /smart/newsearch/ HTTP/1.1" 404 2819
+WARNING:Not Found: /smart/newsearch/
+WARNING:"GET /smart/newsearch/ HTTP/1.1" 404 2819
+WARNING:Not Found: /smart/newsearch/
+WARNING:"GET /smart/newsearch/ HTTP/1.1" 404 2819
+WARNING:Not Found: /smart/newsearch/
+WARNING:"GET /smart/newsearch/ HTTP/1.1" 404 2819
+WARNING:Not Found: /smart/newsearch/
+WARNING:"GET /smart/newsearch/ HTTP/1.1" 404 2819
+INFO:"GET /smart/search/ HTTP/1.1" 200 9150
+INFO:"GET /smart/search/ HTTP/1.1" 200 9150
+INFO:"GET /smart/search/ HTTP/1.1" 200 9150
+INFO:"GET /smart/search/ HTTP/1.1" 200 9150
+INFO:"GET /smart/search/ HTTP/1.1" 200 9150
+INFO:"GET /smart/search/ HTTP/1.1" 200 9150
+INFO:"POST /smart/search/ HTTP/1.1" 200 9310
+INFO:"POST /smart/search/ HTTP/1.1" 200 9326
+INFO:"POST /smart/search/ HTTP/1.1" 200 9326
+INFO:"GET /smart/search/ HTTP/1.1" 200 9166
+WARNING:Not Found: /
+WARNING:"POST / HTTP/1.1" 404 2154
+WARNING:Not Found: /
+WARNING:"POST / HTTP/1.1" 404 2154
+INFO:"GET /smart/search/ HTTP/1.1" 200 9184
+ERROR:Internal Server Error: /smart/goingtwitter
+Traceback (most recent call last):
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\utils\deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/smart/goingtwitter/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR:"POST /smart/goingtwitter HTTP/1.1" 500 69306
+ERROR:Internal Server Error: /smart/goingtwitter
+Traceback (most recent call last):
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\utils\deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/smart/goingtwitter/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR:"POST /smart/goingtwitter HTTP/1.1" 500 69306
+ERROR:Internal Server Error: /smart/goingtwitter
+Traceback (most recent call last):
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\utils\deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/smart/goingtwitter/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR:"POST /smart/goingtwitter HTTP/1.1" 500 69306
+INFO:"GET /smart HTTP/1.1" 301 0
+INFO:"GET /smart/ HTTP/1.1" 200 7393
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+WARNING:Not Found: /newsearch/
+WARNING:"GET /newsearch/ HTTP/1.1" 404 2201
+INFO:"GET /smart/ HTTP/1.1" 200 7396
+WARNING:Not Found: /search/
+WARNING:"GET /search/ HTTP/1.1" 404 2192
+WARNING:Not Found: /search/
+WARNING:"GET /search/ HTTP/1.1" 404 2192
+INFO:"GET /smart/ HTTP/1.1" 200 7402
+INFO:"GET /smart/search/ HTTP/1.1" 200 9185
+INFO:"GET /smart/search/ HTTP/1.1" 200 9185
+INFO:"GET /smart/search/ HTTP/1.1" 200 9185
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9349
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9342
+INFO:"GET /smart/search/ HTTP/1.1" 200 9178
+WARNING:Not Found: /smart/search/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/ HTTP/1.1" 404 2850
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9340
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9340
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9340
+WARNING:Not Found: /smart/search/goingtwitter/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/goingtwitter/ HTTP/1.1" 404 2896
+WARNING:Not Found: /smart/search/goingtwitter/goingtwitter/
+WARNING:"POST /smart/search/goingtwitter/goingtwitter/ HTTP/1.1" 404 2896
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9328
+WARNING:Not Found: /
+WARNING:"POST / HTTP/1.1" 404 2154
+WARNING:Not Found: /
+WARNING:"POST / HTTP/1.1" 404 2154
+WARNING:Not Found: /
+WARNING:"POST / HTTP/1.1" 404 2154
+WARNING:Not Found: /
+WARNING:"POST / HTTP/1.1" 404 2154
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9340
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9340
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9340
+INFO:"POST /smart/search/goingtwitter/ HTTP/1.1" 200 9340
+INFO:"GET /smart/search/ HTTP/1.1" 200 9178
+ERROR:Internal Server Error: /smart/search
+Traceback (most recent call last):
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\utils\deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/smart/search/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR:"POST /smart/search HTTP/1.1" 500 69210
+INFO:"GET /smart/search/ HTTP/1.1" 200 9184
+WARNING:Not Found: /smart/goingtwitter
+WARNING:"POST /smart/goingtwitter HTTP/1.1" 404 2833
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\urls.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 9184
+ERROR:Internal Server Error: /smart/goingtwitter
+Traceback (most recent call last):
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\utils\deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/smart/goingtwitter/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR:"POST /smart/goingtwitter HTTP/1.1" 500 69307
+INFO:"GET /smart/search/ HTTP/1.1" 200 9184
+INFO:"GET /smart/search/ HTTP/1.1" 200 9184
+ERROR:Internal Server Error: /smart/goingtwitter
+Traceback (most recent call last):
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\utils\deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "c:\users\sophie\downloads\django-upload-example-master\django\django\middleware\common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/smart/goingtwitter/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR:"POST /smart/goingtwitter HTTP/1.1" 500 69308
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/search/ HTTP/1.1" 200 9185
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"GET /smart/search/ HTTP/1.1" 200 9185
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9329
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9329
+INFO:"GET /smart/search/ HTTP/1.1" 200 9185
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9447
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9447
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9447
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9347
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9347
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9431
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9431
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9431
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9431
+INFO:"GET /smart/search/ HTTP/1.1" 200 9185
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\forms.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"GET /smart/ HTTP/1.1" 200 7402
+INFO:"GET /smart/search/ HTTP/1.1" 200 9185
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 9331
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 3219
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 3219
+INFO:"POST /smart/goingtwitter/ HTTP/1.1" 200 3219
+INFO:"GET /smart/ HTTP/1.1" 200 7402
+INFO:"GET /smart/search/ HTTP/1.1" 200 9179
+INFO:"POST /smart/search/ HTTP/1.1" 200 9319
+INFO:"POST /smart/search/ HTTP/1.1" 200 9319
+INFO:"POST /smart/search/ HTTP/1.1" 200 9319
+INFO:"POST /smart/search/ HTTP/1.1" 200 9319
+INFO:"POST /smart/search/ HTTP/1.1" 200 9319
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+DEBUG:Started
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\smart\views.py changed, reloading.
+INFO:Watching for file changes with StatReloader
+INFO:In views.py
+INFO:Watching for file changes with StatReloader
+INFO:In views.py
+INFO:C:\Users\Sophie\PycharmProjects\django_Project\mysite\mysite\settings.py changed, reloading.
+INFO:Watching for file changes with StatReloader
