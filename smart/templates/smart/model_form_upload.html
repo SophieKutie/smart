@@ -1,117 +1,79 @@
 {% extends "smart/header.html" %}
 
 
+
 {% block content %}
-<!--  <div class="input-group-label" style = "display: inline;" >-->
-<!--&lt;!&ndash;                        <label class="input-group-addon" >Add terms: keywords</label>&ndash;&gt;-->
-<!--                        <form method="post">-->
-<!--                            {% csrf_token %}-->
-<!--                            {{form.as_h}}-->
-<!--&lt;!&ndash;                            <input type="text">&ndash;&gt;-->
-<!--                            <textarea rows="10" cols="100"> Enter your terms seperated by a comma </textarea>-->
-<!--                            <button type="submit">Submit</button>-->
-<!--                        </form>-->
-<!--                       <h4> {{ text }}</h4>-->
-<!--                    <a class="button button-light button-smallest dropbox-picker" data-image="before"><span class="icon-dropbox"></span></a>-->
-<!--</div>-->
-<div class = "new">
-<form  action= "/smart/search/"    method="post">
+
+
+<h6>Now you may submit some key terms</h6>
+<div class = "keyterms">
+<form  action= "/search/" method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form }}
+    {{ bform.as_p}}
+
+   <input id="datetimepicker1" type="text" name="datepicker">
     <input type="submit" value="Submit">
+
 </form>
 </div>
 
-
-<!--<div class = "something">-->
-<!--<form action="/" method="post">-->
-<!--    {% csrf_token %}-->
-<!--    {{ form }}-->
-<!--    <input type="submit" value="Submit">-->
-<!--</form>-->
-<!--</div>-->
-<!--<h2>Upload</h2>-->
-<!--  <form method="post" enctype="multipart/form-data">-->
-<!--    {% csrf_token %}-->
-<!--    <input type="file" name="document">-->
-<!--    <button type="submit">Upload file</button>-->
-<!--  </form>-->
-<!--  {% if url %}-->
-<!--    <p>Uploaded file: <a href="{{ url }}">{{ url }}</a></p>-->
-<!--  {% endif %}-->
-
-<!--<br>-->
-<!--<br>-->
-
-<!--<div class="dropdown">-->
-<!--    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown"-->
-<!--            aria-haspopup="true" aria-expanded="false" style="display: inline;">-->
-<!--        Category-->
-<!--    </button>-->
-<!--    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">-->
-
-<!--        <form method="post" enctype="multipart/form-data">-->
-<!--            {% csrf_token %}-->
-<!--            <fieldset>-->
-<!--                &lt;!&ndash;           <legend> check boxes</legend>&ndash;&gt;-->
-<!--                <label><input type="checkbox" value="1" name="category"/>Racist</label>-->
-<!--                <label><input type="checkbox" value="2" name="category"/>Misogynistic</label>-->
-<!--                <label><input type="checkbox" value="3" name="category"/>Homophobic</label>-->
-
-
-<!--            </fieldset>-->
-<!--            <input type="submit" value="send form">-->
-<!--        </form>-->
-
-<!--    </div>-->
-<!--</div>-->
-
 <br>
 
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" style="display: inline;">
-        Twitter Handles/Names
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <ul class="items">
-            <li><input type="checkbox"/>meghan</li>
-            <li><input type="checkbox"/>dianne abbot</li>
-            <li><input type="checkbox"/>theresa may</li>
-            <li><input type="checkbox"/>nicola</li>
-            <li><input type="checkbox"/>harry</li>
-            <li><input type="checkbox"/>meghan harry</li>
-            <li><input type="checkbox"/>duke</li>
-            <li><input type="checkbox"/>duchess</li>
 
 
-        </ul>
-    </div>
-</div>
 
-<br>
-
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" style="display: block;">
-        Retrospective
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-
-        <li><input value="time frame"/></li>
-
-    </div>
-</div>
-
-<br>
 
 
 <div>
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" style="display: block;">
+        Retrospective
+    </button>
+
+
+
+<!--  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">-->
+<!--      <form method = post enctype="multipart/form-data">-->
+<!--        {% csrf_token %}-->
+
+<!--         </form>-->
+
+<!--      {{ form.date }}-->
+<!--      <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">-->
+<!--        <div class="input-group-text"><i class="fa fa-calendar"></i></div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <script>
+      $(function () {
+        $("#datetimepicker1").datetimepicker();
+      });
+    </script>
+  </div>
+
+
+
+<br>
+
+
+<div>
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="display: block;">
         Live
     </button>
 
+    <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+       {{ form.date }}
+      <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+      </div>
+    </div>
+
+<!--    <script>-->
+<!--      $(function () {-->
+<!--        $("#datetimepicker1").datetimepicker();-->
+<!--      });-->
+<!--    </script>-->
 </div>
 
 <br>
@@ -135,62 +97,10 @@ function clickEvent() {
 
 </script>
 
-<!---->
-<!--Progress bar-->
+
 
 
 {% endblock %}
-
-<!--<div class="input-group-label" style = "display: inline;" >-->
-<!--<input type="file" id="real-file" hidden="hidden" />-->
-<!--<button type="button" id="custom-button">Upload csv file</button>-->
-<!--<span id="custom-text">No file chosen, yet.</span>-->
-
-
-<!--<script type = "text/javascript">-->
-<!--const realFileBtn = document.getElementById("real-file");-->
-<!--const customBtn = document.getElementById("custom-button");-->
-<!--const customTxt = document.getElementById("custom-text");-->
-
-<!--customBtn.addEventListener("click", function() {-->
-<!--  realFileBtn.click();-->
-<!--});-->
-
-<!--realFileBtn.addEventListener("change", function() {-->
-<!--  if (realFileBtn.value) {-->
-<!--    customTxt.innerHTML = realFileBtn.value.match(-->
-<!--      /[\/\\]([\w\d\s\.\-\(\)]+)$/-->
-<!--    )[1];-->
-<!--  } else {-->
-<!--    customTxt.innerHTML = "No file chosen, yet. ";-->
-<!--  }-->
-<!--});-->
-<!--</script>-->
-
-<br>
-<br>
-<br>
-
-
-<!--<div class="input-group-label" style = "display: inline;" >-->
-<!--   <form method="post" enctype="multipart/form-data">-->
-<!--    {% csrf_token %}-->
-<!--    <input type="file" name="document">-->
-<!--    <button type="submit">Upload file</button>-->
-<!--  </form>-->
-<!--  {% if url %}-->
-<!--    <p>Uploaded file: <a href="{{ url }}">{{ url }}</a></p>-->
-<!--  {% endif %}-->
-<!--    <p>File uploaded at: <a href="#">Return to home</a></p>-->
-
-
-<!-- <form method="post" enctype="multipart/form-data">-->
-<!--    {% csrf_token %}-->
-<!--    {{ form.as_p }}-->
-<!--    <button type="submit">Upload</button>-->
-<!--  </form>-->
-
-<!--  <p><a href="{% url 'model_form_upload' %}">Return to home</a></p>-->
 
 
 

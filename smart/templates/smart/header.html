@@ -2,19 +2,55 @@
 <html lang="en">
 
 <head>
-	<title>SMARTool</title>
-	<meta charset="utf-8" />
-	{% load static %}
-	<link rel="stylesheet" href="{% static 'smart/css/bootstrap.min.css' %}" type = "text/css"/>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <title>SMARTool</title>
+    <meta charset="utf-8"/>
+    {% load static %}
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
 
-	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-	<style type="text/css" media="screen">
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"
+            integrity="sha256-VBLiveTKyUZMEzJd6z2mhfxIqz3ZATCuVMawPZGzIfA=" crossorigin="anonymous"></script>
+
+    <!-- Tempus Dominus Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css"
+          integrity="sha256-XPTBwC3SBoWHSmKasAk01c08M6sIA5gF5+sRxqak2Qs=" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"
+            integrity="sha256-z0oKYg6xiLq3yJGsp/LsY9XykbweQlHl42jHv2XTBz4=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="{% static 'smart/css/bootstrap.min.css' %}" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+            crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css" media="screen">
 		html,
 		body {
 		  height:100%
@@ -38,71 +74,74 @@
   color: #aaa;
 }
 
-	</style>
+
+    </style>
 </head>
 
 <body class="body" style="background-color:#f6f6f6">
-	<div class="container-fluid" style="min-height:95%; ">
-		<div class="row">
-			  <div class="col-sm-2">
-				  <br>
-				  <center>
-					<img src="{% static 'smart/img/SMART.png' %}" class="responsive-img" style='max-height:100px;' alt="face">
-				  </center>
-			  </div>
-			  <div class="col-sm-10">
-				  <br>
-				  <center>
-				  <h3>SMARTool</h3>
-					  <h6> For Journalists: Combating Fake News</h6>
-				  </center>
-			  </div>
-		</div><hr>
+<div class="container-fluid" style="min-height:95%; ">
+    <div class="row">
+        <div class="col-sm-2">
+            <br>
+            <center>
+                <img src="{% static 'smart/img/SMART.png' %}" class="responsive-img" style='max-height:100px;'
+                     alt="face">
+            </center>
+        </div>
+        <div class="col-sm-10">
+            <br>
+            <center>
+                <h3>SMARTool</h3>
+                <h6> For Journalists: Investigating...</h6>
+            </center>
+        </div>
+    </div>
+    <hr>
 
-		<div class="row">
-		  <div class="col-sm-2">
-		  <br>
+    <div class="row">
+        <div class="col-sm-2">
+            <br>
 
-		  <br>
-		   <!-- Great, til you resize. -->
-			<!--div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff" class="well bs-sidebar" id="sidebar" style="background-color:#fff"-->
-			<div>
+            <br>
+            <!-- Great, til you resize. -->
+            <!--div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff" class="well bs-sidebar" id="sidebar" style="background-color:#fff"-->
+            <div>
 
-			<ul class="nav nav-pills">
-			  <li class="nav-item">
-				<a class="nav-link active" href="http://127.0.0.1:8000/smart/" style="background-color: black">Home</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="http://127.0.0.1:8000/smart/search/" >New Search</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="http://127.0.0.1:8000/contact/" style="text-color: white">Contact</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link " href="#" >About</a>
-			  </li>
-			</ul>
-			</div> <!--well bs-sidebar affix-->
-		  </div> <!--col-sm-2-->
-
-
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/" style=" ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/handles_search/">New Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/" style="text-color: white">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/goingtwitter/">About</a>
+                    </li>
+                </ul>
+            </div> <!--well bs-sidebar affix-->
+        </div> <!--col-sm-2-->
 
 
-		  <div class="col-sm-10">
+        <div class="col-sm-10">
 
-			<div class='container-fluid'>
-			<br><br>
-			   {% block content %}
-			   {% endblock %}
-			</div>
-		  </div>
-		</div>
-	</div>
-	<footer>
-		<div class="container-fluid" style='margin-left:15px'>
-			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
-		</div>
-	</footer>
+            <div class='container-fluid'>
+                <br><br>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid" style='margin-left:15px'>
+        <p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#"
+                                                                                                 target="blank">Twitter</a>
+            | <a href="#" target="blank">Google+</a></p>
+    </div>
+</footer>
 
 </body>
 

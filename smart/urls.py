@@ -24,9 +24,13 @@ urlpatterns = [
 
     path('search/', views.search, name='search'),
 
-    path('goingtwitter/', views.goingtwitter, name='goingtwitter'),
+    path('handles_search/',  views.handles_search, name='handles_search'),
+
+    path('goingtwitter/', views.goingtwitter,  name='goingtwitter'),
 
     path('contact/', views.contact, name='contact'),
+
+
 
     # path('search/<misogynistic>', views.search),
     #

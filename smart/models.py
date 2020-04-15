@@ -1,4 +1,6 @@
 import datetime
+import os
+from django.conf import settings
 
 from django import forms
 from django.contrib.staticfiles import storage
@@ -51,6 +53,7 @@ class Category(models.Model):
         ("racist", "racist"),
         ("homophobic", "homophobic")
     ]
+
     name = models.CharField(max_length=200, choices=choices)
 
 

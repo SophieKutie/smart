@@ -40,9 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'background_task',
     'django_js_reverse',
-    'smart',
-]
+    'smart'
+    ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

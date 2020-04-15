@@ -21,32 +21,20 @@
 
 <h6>Lets write a story by doing an intelligent search</h6>
 
-<ul>
-    {% for todo_item in all_items %}
-    <li>{{ todo_item.content }}</li>
-    {% endfor %}
-</ul>
-
-<!--<form action="/newsearch/"  class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false" style="display: inline;" method="post">{% csrf_token %}-->
-
-<!--&lt;!&ndash;    <input type="text" name="content"/>&ndash;&gt;-->
-<!--    <button type="submit" />-->
-<!--</form>-->
 
 
 
 
 
+<a class="btn btn-primary" href="/handles_search/" role="button">Create New Search</a>
 
-
-<button action="/smart/search/"  onclick="window.location.href='/smart/search/' " class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  style="display: inline;" >
-   Create New Search
-  </button>
-
+<!--<button class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  style="display: inline;">-->
+<!--  </button>-->
 
  <button class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  style="display: inline;">
     Extend Existing Search
   </button>
+
 <button class="btn btn-secondary dropdown-toggle"  type="button"  aria-haspopup="true" aria-expanded="false"  style="display: inline;">
     Copy and Rename Existing Search
   </button>
