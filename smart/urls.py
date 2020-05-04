@@ -10,23 +10,13 @@ urlpatterns = [
     # ex: /smart/
     path('', views.index, name='index'),
 
-    # ex:
-    # path('', views.index, name='index'),
-
-    # # ex: /smart/5/
-    # path('<int:question_id>/', views.detail, name='detail'),
-    #
-    # # ex: /smart/5/results/
-    # path('<int:question_id>/results/', views.results, name='results'),
-    #
-    # # ex: /smart/5/vote/
-    # path('<int:question_id>/vote/', views.vote, name='vote'),
-
     path('search/', views.search, name='search'),
 
     path('handles_search/',  views.handles_search, name='handles_search'),
 
     path('goingtwitter/', views.goingtwitter,  name='goingtwitter'),
+
+    path('goingtwittertwo/', views.goingtwittertwo,  name='goingtwittertwo'),
 
     path('contact/', views.contact, name='contact'),
 

@@ -1,7 +1,30 @@
 import logging
+from datetime import timedelta, datetime
+
 import pandas as pd
+from django.template.defaultfilters import date
 
 logger = logging.getLogger(__name__)
+
+
+# def get_durtion():
+def get_duration_of_search():
+    now = datetime.now()
+    print("Today's date: ", str(now))
+
+    # add 7 days to current date for live streaming duration
+    live_search = now + timedelta(days=7)
+    if live_search:
+        print('Live search duration: ', timedelta(days=7), ' and ends: ', live_search)
+        return 'Live search duration: ', timedelta(days=7), ' and ends: ', live_search
+
+    # subtract 2 weeks from current date for retro
+    retro = now - timedelta(weeks=2)
+    if retro:
+        print('Date two weeks ago: ', retro)
+
+
+# print('two_weeks_ago object type: ', type(two_weeks_ago))
 
 
 def get_hate_terms_from_file_system(csv_file_name: str) -> list:

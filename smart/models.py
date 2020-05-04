@@ -20,6 +20,11 @@ import logging
 logging.basicConfig(filename='file.log', level=logging.DEBUG, format='%(levelname)s:%(message)s')
 
 
+class DateForm(models.Model):
+    #DateInput
+    date = models.DateTimeField(help_text='date', null=True)
+
+
 class Document(models.Model):
     description = models.CharField(max_length=255, blank=True)
     document = models.FileField(upload_to='../media/')

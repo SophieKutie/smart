@@ -1,35 +1,24 @@
 {% extends "smart/header.html" %}
 
 
-
 {% block content %}
 
 
 <h6>Now you may submit some key terms</h6>
-<div class = "keyterms">
-<form  action= "/search/" method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ bform.as_p}}
+{{startdate}}
+<div class="keyterms">
+    <form action="/search/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ bform.as_p}}
+       <input type="file" name="hatefile">
 
-   <input id="datetimepicker1" type="text" name="datepicker">
-    <input type="submit" value="Submit">
+<!--        <input id="datetimepicker1" type="text" name="datepicker">-->
+        <input type="submit" name="{{bform.prefix}}" value="Submit">
 
-</form>
+    </form>
 </div>
 
 <br>
-
-
-
-
-
-
-<div>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" style="display: block;">
-        Retrospective
-    </button>
-
 
 
 <!--  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">-->
@@ -44,30 +33,16 @@
 <!--      </div>-->
 <!--    </div>-->
 
-    <script>
-      $(function () {
-        $("#datetimepicker1").datetimepicker();
-      });
-    </script>
-  </div>
-
+<!--    <script>-->
+<!--      $(function () {-->
+<!--        $("#datetimepicker1").datetimepicker();-->
+<!--      });-->
+<!--    </script>-->
+<!--  </div>-->
 
 
 <br>
 
-
-<div>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" style="display: block;">
-        Live
-    </button>
-
-    <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-       {{ form.date }}
-      <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-      </div>
-    </div>
 
 <!--    <script>-->
 <!--      $(function () {-->
@@ -79,33 +54,12 @@
 <br>
 
 
-<div class="input-group-label">
 
-    <button id="btn-onclick" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-            style="display: block;" onclick="clickEvent();">
-        Download json
-    </button>
-</div>
 
-<script type="text/javascript">
-    document.getElementById("btn-onclick").onclick = clickEvent;
 
-function clickEvent() {
-    alert('where would you like to save?');
-};
 
 
 </script>
 
 
-
-
 {% endblock %}
-
-
-
-
-
-
-
-
