@@ -50,8 +50,8 @@ def contact(request):
 
 
 def goingtwitter(request):
-    data = twitterlive.run_script()
-    print(data)
+    # data = twitterlive.run_script()
+    # print(data)
 
     return render(request, 'smart/goingtwitter.html')
 
@@ -234,188 +234,189 @@ def search(request):
     bform = SearchForm(request.POST)
     # getting startdate parameter on url
     start_date = request.GET.get('startdate')
+    end_date = request.GET.get('enddate')
     print(start_date)
+    print(end_date)
 
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
+    # create a form instance and populate it with data from the request:
 
-        # testing picker post request
-        # print(request.POST['datetimes'])
+    # testing picker post request
+    # print(request.POST['datetimes'])
 
-        # check whether it's valid:
-        # if bform.is_valid():
-        #     # process the data in form.cleaned_data as required
-        #     query = create_twitter_query_using_form(bform.cleaned_data['category'],
-        #                                             bform.cleaned_data['typed'],
-        #                                             request.FILES.get('uploaded'),
-        #                                             # aform.cleaned_data['handles_category'],
-        #                                             # aform.cleaned_data['handles_typed'],
-        #                                             # request.FILES.get('handles_upload')
-        #
-        #                                             )
-        #     print(query)
-        # ...
-        # redirect to a new URL:
-        # return redirect('/')
+    # check whether it's valid:
+    # if bform.is_valid():
+    #     # process the data in form.cleaned_data as required
+    #     query = create_twitter_query_using_form(bform.cleaned_data['category'],
+    #                                             bform.cleaned_data['typed'],
+    #                                             request.FILES.get('uploaded'),
+    #                                             # aform.cleaned_data['handles_category'],
+    #                                             # aform.cleaned_data['handles_typed'],
+    #                                             # request.FILES.get('handles_upload')
+    #
+    #                                             )
+    #     print(query)
+    # ...
+    # redirect to a new URL:
+    # return redirect('/')
 
-        ############# 02/05 ########## for submitting to folder
-        # form = UploadFileForm(request.POST, request.FILES)
-        if request.method == 'POST' and request.FILES['hatefile']:
+    ############# 02/05 ########## for submitting to folder
+    # form = UploadFileForm(request.POST, request.FILES)
+    if request.method == 'POST' and request.FILES['hatefile']:
             hatefile = request.FILES["hatefile"]
             print(hatefile)
-            fs = FileSystemStorage()  # save path to be saved
+            fs = FileSystemStorage(location='./test/data/abusive_terms')  # save path to be saved
             print(fs)
             filename = fs.save(hatefile.name, hatefile)
-            uploaded_file_url = fs.url(filename)
 
             # save output file data folder
-            # output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
-            # # run script
-            # twitterlive.run_script(0, 0, query['terms'], QUERY_TIME_LIMIT, output_file, reps=5)
-            # , duration, start_date , finish_date)
+        # output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
+        # # run script
+        # twitterlive.run_script(0, 0, query['terms'], QUERY_TIME_LIMIT, output_file, reps=5)
+        # , duration, start_date , finish_date)
 
-            # tweet path to read from if tweets were fetched
-            # tweets_path = Path("./test/data/tweets.json")
-            # if tweets_path.exists():
-            #     tweets = tweets_path.read_text()
-            # else:
-            #     logger.info("Unable to find file for tweets")
-            #     tweets = ""
+        # tweet path to read from if tweets were fetched
+        # tweets_path = Path("./test/data/tweets.json")
+        # if tweets_path.exists():
+        #     tweets = tweets_path.read_text()
+        # else:
+        #     logger.info("Unable to find file for tweets")
+        #     tweets = ""
 
-            # return render(request, 'smart/goingtwittertwo.html', {'terms': query['terms'], 'tweets': tweets})
+        # return render(request, 'smart/goingtwittertwo.html', {'terms': query['terms'], 'tweets': tweets})
 
         # if a GET (or any other method) we'll create a blank form
 
-        return render(request, 'smart/goingtwittertwo.html')
+            return render(request, 'smart/goingtwittertwo.html')
+
 
     return render(request, 'smart/model_form_upload.html', {"bform": bform})
 
-    # class FileFieldView(FormView):
-    #     form_class = FileFieldForm
-    #     template_name = 'upload.html'  # Replace with your template.
-    #     success_url = '...'  # Replace with your URL or reverse().
-    #
-    #     def post(self, request, *args, **kwargs):
-    #         form_class = self.get_form_class()
-    #         form = self.get_form(form_class)
-    #         files = request.FILES.getlist('file_field')
-    #         if form.is_valid():
-    #             for f in files:
-    #                 ...  # Do something with each file.
-    #             return self.form_valid(form)
-    #         else:
-    #             return self.form_invalid(form)
+# class FileFieldView(FormView):
+#     form_class = FileFieldForm
+#     template_name = 'upload.html'  # Replace with your template.
+#     success_url = '...'  # Replace with your URL or reverse().
+#
+#     def post(self, request, *args, **kwargs):
+#         form_class = self.get_form_class()
+#         form = self.get_form(form_class)
+#         files = request.FILES.getlist('file_field')
+#         if form.is_valid():
+#             for f in files:
+#                 ...  # Do something with each file.
+#             return self.form_valid(form)
+#         else:
+#             return self.form_invalid(form)
 
-    # def upload(request):
-    #     context = {}
-    #
-    #     if request.method == 'POST':
-    #         uploaded_file = request.FILES['document']
-    #         logging.INFO('not right')
-    #         fs = FileSystemStorage()
-    #         name = fs.save(uploaded_file.name, uploaded_file)
-    #         context['url'] = fs.url(name)
-    #     return render(request, 'model_form_upload.html', context)
-    #
+# def upload(request):
+#     context = {}
+#
+#     if request.method == 'POST':
+#         uploaded_file = request.FILES['document']
+#         logging.INFO('not right')
+#         fs = FileSystemStorage()
+#         name = fs.save(uploaded_file.name, uploaded_file)
+#         context['url'] = fs.url(name)
+#     return render(request, 'model_form_upload.html', context)
+#
 
-    # def model_form_upload(request):
-    #     if request.method == 'POST':
-    #         form = DocumentForm(request.POST, request.FILES)
-    #         if form.is_valid():
-    #             form.save()
-    #             return redirect(reverse('smart.views.model_form_upload'))
-    #     else:
-    #         form = DocumentForm()
-    #
-    #         # Load documents for the list page
-    #     documents = Document.objects.all()
-    #
-    #     return render(request, 'smart/model_form_upload.html', {
-    #         'form': form
-    #     })
+# def model_form_upload(request):
+#     if request.method == 'POST':
+#         form = DocumentForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             form.save()
+#             return redirect(reverse('smart.views.model_form_upload'))
+#     else:
+#         form = DocumentForm()
+#
+#         # Load documents for the list page
+#     documents = Document.objects.all()
+#
+#     return render(request, 'smart/model_form_upload.html', {
+#         'form': form
+#     })
 
-    # def upload(request):
-    #     context = {}
-    #     if request.method == 'POST':
-    #         uploaded_file = request.FILES['document']
-    #         fs = FileSystemStorage()
-    #         name = fs.save(uploaded_file.name, uploaded_file)
-    #         context['url'] = fs.url(name)
-    #     return render(request, 'model_form_upload.html', context)
+# def upload(request):
+#     context = {}
+#     if request.method == 'POST':
+#         uploaded_file = request.FILES['document']
+#         fs = FileSystemStorage()
+#         name = fs.save(uploaded_file.name, uploaded_file)
+#         context['url'] = fs.url(name)
+#     return render(request, 'model_form_upload.html', context)
 
-    # logger = logging.getLogger('project.smart')
+# logger = logging.getLogger('project.smart')
 
-    # def upload(request):
-    #     if request.method == 'POST' and request.FILES.get('myfile', None):
-    #         logger.error('Something went wrong')
-    #         myfile = request.FILES.get("myfile", None)
-    #         fs = FileSystemStorage(location='/media/')
-    #         print(fs)
-    #         filename = fs.save(myfile.name, myfile)
-    #         uploaded_file_url = fs.url(filename)
-    #         print("Sophie", uploaded_file_url.name)
-    #         print(uploaded_file_url.size)
-    #         return render(request, 'smart/model_form_upload.html', {
-    #             'uploaded_file_url': uploaded_file_url
-    #         })
-    #     return render(request, 'smart/model_form_upload.html')
+# def upload(request):
+#     if request.method == 'POST' and request.FILES.get('myfile', None):
+#         logger.error('Something went wrong')
+#         myfile = request.FILES.get("myfile", None)
+#         fs = FileSystemStorage(location='/media/')
+#         print(fs)
+#         filename = fs.save(myfile.name, myfile)
+#         uploaded_file_url = fs.url(filename)
+#         print("Sophie", uploaded_file_url.name)
+#         print(uploaded_file_url.size)
+#         return render(request, 'smart/model_form_upload.html', {
+#             'uploaded_file_url': uploaded_file_url
+#         })
+#     return render(request, 'smart/model_form_upload.html')
 
-    # handle_uploaded_file(myfile)
+# handle_uploaded_file(myfile)
 
-    # def upload_file(request):
-    #     if request.method == 'POST':
-    #         form = UploadFileForm(request.POST, request.FILES)
-    #         if form.is_valid():
-    #             form = handle_uploaded_file(request.FILES['form'])
-    #             form.save()
-    #             return HttpResponseRedirect('/smart/contact.html')
-    #         else:
-    #             form = UploadFileForm()
-    #
-    #     return render(request, 'smart/model_form_upload.html', {'form': form})
-    #
-    #
-    # def handle_uploaded_file(f):
-    #     with open('some/file/name.txt', 'wb+') as destination:
-    #         for chunk in f.chunks():
-    #             destination.write(chunk)
-    #             destination.close()
+# def upload_file(request):
+#     if request.method == 'POST':
+#         form = UploadFileForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             form = handle_uploaded_file(request.FILES['form'])
+#             form.save()
+#             return HttpResponseRedirect('/smart/contact.html')
+#         else:
+#             form = UploadFileForm()
+#
+#     return render(request, 'smart/model_form_upload.html', {'form': form})
+#
+#
+# def handle_uploaded_file(f):
+#     with open('some/file/name.txt', 'wb+') as destination:
+#         for chunk in f.chunks():
+#             destination.write(chunk)
+#             destination.close()
 
-    # def addTodo(request):
-    #     new_item = TodoItem(content=request.POST['content'])
-    #     new_item.save()
-    #     return HttpResponseRedirect('/newsearch/')
-    #
-    #
-    # def deleteTodo(request, todo_id):
-    #     item_to_delete = TodoItem.objects.get(id=todo_id)
-    #     item_to_delete.delete()
-    #     return HttpResponseRedirect('/todo/')
-    #
-    #
-    # def detail(request, question_id):
-    #     return HttpResponse("You're looking at question %s." % question_id)
-    #
-    #
-    # def results(request, question_id):
-    #     response = "You're looking at the results of question %s."
-    #     return HttpResponse(response % question_id)
+# def addTodo(request):
+#     new_item = TodoItem(content=request.POST['content'])
+#     new_item.save()
+#     return HttpResponseRedirect('/newsearch/')
+#
+#
+# def deleteTodo(request, todo_id):
+#     item_to_delete = TodoItem.objects.get(id=todo_id)
+#     item_to_delete.delete()
+#     return HttpResponseRedirect('/todo/')
+#
+#
+# def detail(request, question_id):
+#     return HttpResponse("You're looking at question %s." % question_id)
+#
+#
+# def results(request, question_id):
+#     response = "You're looking at the results of question %s."
+#     return HttpResponse(response % question_id)
 
-    # class NewSearchView(TemplateView):
-    #     template_name = 'smart/model_form_upload.html'
-    #
-    #     def get(self, request):
-    #         form = NewSearchForm()
-    #         return render(request, self.template_name, {'form': form})
-    #
-    #     # handling data sent to server
-    #     def post(self, request):
-    #         form = NewSearchForm(request.POST)
-    #         if form.is_valid():
-    #             form.save()
-    #             text = form.cleaned_data['post']
-    #             form = NewSearchForm()
-    #             return redirect('newsearch:newsearch')
-    #
-    #             args = {'form': form, 'text': text}
-    #             return render(request, self.template_name, args)
+# class NewSearchView(TemplateView):
+#     template_name = 'smart/model_form_upload.html'
+#
+#     def get(self, request):
+#         form = NewSearchForm()
+#         return render(request, self.template_name, {'form': form})
+#
+#     # handling data sent to server
+#     def post(self, request):
+#         form = NewSearchForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             text = form.cleaned_data['post']
+#             form = NewSearchForm()
+#             return redirect('newsearch:newsearch')
+#
+#             args = {'form': form, 'text': text}
+#             return render(request, self.template_name, args)

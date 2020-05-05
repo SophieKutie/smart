@@ -149,8 +149,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'test/data/user_handles')
 MEDIA_URL = '/user_handles/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'test/data/abusive_terms')
-MEDIA_URL = '/abusive_terms/'
+
 
 
 

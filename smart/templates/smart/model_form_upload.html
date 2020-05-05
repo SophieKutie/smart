@@ -6,13 +6,14 @@
 
 <h6>Now you may submit some key terms</h6>
 {{startdate}}
+{{endate}}
 <div class="keyterms">
     <form action="/search/" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ bform.as_p}}
-       <input type="file" name="hatefile">
 
-<!--        <input id="datetimepicker1" type="text" name="datepicker">-->
+        <input type="file" name="hatefile">
+
         <input type="submit" name="{{bform.prefix}}" value="Submit">
 
     </form>
