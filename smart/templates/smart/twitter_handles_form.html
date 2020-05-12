@@ -11,7 +11,6 @@
 <br>
 <br>
 
-<!-- -->
 
 <br>
 <br>
@@ -19,12 +18,10 @@
 <div class="input-group date" id="datetimepicker" data-target-input="nearest">
     <form action="/handles_search/" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        <!--        <p>Select Date Range</p>-->
 
-        <button type="button" id="dropdownMenu4" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" style="display: block;">
+        <label style="display: block;">
             Date Range Selection for Retro Search
-        </button>
+        </label>
         <input type="text" name="datetimes"/><br><br>
 
         <button type="button" id="dropdownMenu5" data-toggle="dropdown"
@@ -32,21 +29,50 @@
             Date Range Selection for Live Search
         </button>
         <input type="text" name="datetimes"/><br><br>
-
-        {{ aform.as_p }}
-         <input type="file" name="myfile">
-        <br><br><br>
-
-
-        <br>
-
-        <input type="submit" name="{{aform.prefix}}" value="Submit">
     </form>
-
 </div>
 
+    <div>
+        <form action="/handles_search/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+<!--            <label>Select an example file: </label>-->
+            {{ aform.handles_examples.as_p}}
+<!--            <input type = "file" name="file">-->
+             <input type="submit" name="{{aform.prefix}}" value="Submit">
+        </form>
+    </div>
+<br>
+<br>
+    <div>
+        <form action="/handles_search/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
 
-<script>
+<!--            <label>Enter names manually: </label>-->
+            {{ aform.handles_typed}} <br>
+            <input type="submit" name="{{aform.prefix}}" value="Submit">
+
+        </form>
+    </div>
+
+<br>
+<br>
+
+
+    <div>
+        <form action="/handles_search/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ aform.handles_upload}}
+
+            <input type="submit" name="{{aform.prefix}}" value="Submit">
+        </form>
+
+    </div>
+
+<br>
+<br>
+
+
+    <script>
         $(function() {
           $('input[name="datetimes"]').daterangepicker({
             timePicker: true,
@@ -59,12 +85,9 @@
         });
 
 
-</script>
 
 
+    </script>
 
 
-
-
-{% endblock %}
-<!---->
+    {% endblock %}

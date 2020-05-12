@@ -1,15 +1,17 @@
+import csv
 import logging
 from io import StringIO
 
 from django.core.files.storage import FileSystemStorage
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, request
 from django.shortcuts import render, redirect
 from bootstrap_datepicker_plus import DatePickerInput, TimePickerInput
 from django.urls import reverse
 
 from scripts import twitterlive
 from .forms import TwitterhandlesForm, SearchForm, UploadFileForm, DocumentForm
-from .helpers import get_hate_terms_from_file_system
+from .helpers import get_hate_terms_from_file_system, get_uploaded
+    # file_handler
 from pathlib import Path
 from datetime import datetime, date, timedelta
 
@@ -63,169 +65,114 @@ def goingtwittertwo(request):
     return render(request, 'smart/goingtwittertwo.html')
 
 
-def create_twitter_query_using_form_1(handles_upload, handles_typed, handles_category) -> dict:
+def create_twitter_query_using_form_1(handles_upload, handles_typed, handles_example) -> dict:
     """
     Creates a dictionary representing a query that will be used to query twitters api.
     """
     query = {'terms': []}
     # if query object gets to more than 3 keys, transform into a class
 
-    if handles_category:
+    if handles_example:
         # open up a file on the server here
         # https://realpython.com/working-with-files-in-python/
         # use the choice number to identify the file to load
         # pass
-        query['terms'] = get_hate_terms_from_file_system(handles_category)
+        #
+        get_hate_terms_from_file_system(handles_example)
+        #file_handler(handles_example)
 
     if handles_typed:
         # split the contents of .typed and transform into a list
         # pass
+        # transform to csv file too and place in directory user_handles
         query['terms'] = get_hate_terms_from_file_system(StringIO(handles_typed))
+        outputFile = open('test/data/abusive_terms/typed_output.csv', 'w', newline='')
+        outputWriter = csv.writer(outputFile)
+        outputWriter.writerow(query['terms'])
 
     if handles_upload:
         # open up a file from the client here
         # https://docs.djangoproject.com/en/3.0/topics/http/file-uploads/
         # read the file that was uploaded and transform into a  list
         # pass
-        query['terms'] = get_hate_terms_from_file_system(handles_upload)
+        get_uploaded(handles_upload)
 
-    return query
+    # return query
 
 
-def create_twitter_query_using_form(category, typed, uploaded) -> dict:
-    """
-    Creates a dictionary representing a query that will be used to query twitters api.
-    """
-    query = {'terms': []}
-
-    # if query object gets to more than 3 keys, transform into a class
-
-    if category:
-        # open up a file on the server here
-        # https://realpython.com/working-with-files-in-python/
-        # use the choice number to identify the file to load
-        # pass
-        query['terms'] = get_hate_terms_from_file_system(category)
-
-    if typed:
-        # split the contents of .typed and transform into a list
-        # pass
-        query['terms'] = get_hate_terms_from_file_system(StringIO(typed))
-
-    if uploaded:
-        # open up a file from the client here
-        # https://docs.djangoproject.com/en/3.0/topics/http/file-uploads/
-        # read the file that was uploaded and transform into a  list
-        # pass
-        query['terms'] = get_hate_terms_from_file_system(uploaded)
-
-    print(query)
-    return query
+# def create_twitter_query_using_form(category, typed, uploaded, date) -> dict:
+#     """
+#     Creates a dictionary representing a query that will be used to query twitters api.
+#     """
+#     query = {'terms': []}
+#
+#     # if query object gets to more than 3 keys, transform into a class
+#
+#     if category:
+#         # open up a file on the server here
+#         # https://realpython.com/working-with-files-in-python/
+#         # use the choice number to identify the file to load
+#         # pass
+#         query['terms'] = get_hate_terms_from_file_system(category)
+#
+#     if typed:
+#         # split the contents of .typed and transform into a list
+#         # pass
+#         query['terms'] = get_hate_terms_from_file_system(StringIO(typed))
+#
+#     if uploaded:
+#         # open up a file from the client here
+#         # https://docs.djangoproject.com/en/3.0/topics/http/file-uploads/
+#         # read the file that was uploaded and transform into a  list
+#         # pass
+#         query['terms'] = get_hate_terms_from_file_system(uploaded)
+#
+#     print(query)
+#     return query
 
 
 def handles_search(request):
-    aform = TwitterhandlesForm(request.POST)
     # template_name = 'smart/twitter_handles_form.html'
     # return render(request, 'smart/twitter_handles_form.html')
     # if this is a POST request we need to process the form data
 
     #
-
-    # if request.method == 'POST':
+    aform = TwitterhandlesForm(request.POST)
+    if request.method == 'POST':
     # create a form instance and populate it with data from the request:
-    # aform = TwitterhandlesForm(request.POST)
 
     # # testing picker post request 29/04/2020
 
     # print(datepicker_value[1])
+    # print(request.POST['datetimes'])
+    # collect the date value when its been sent to the server
+    # datepicker_value = request.POST['datetimes'].replace(' ', ' ')
+    #
+    # # convert date string format to useable format for tweepy
+    # datepicker_value = datetime.strptime(datepicker_value, '%Y/%m/%d-%Y/%m/%d').strftime('%Y-%m-%d')
+    #
+    # # seperate the string to give individual dates   ************seems to be reading start date as 2020 rather than whole string
+    # #
+    # datepicker_value = datepicker_value.split(' - ')
+    # start_date1 = datepicker_value[0]
+    # end_date1 = datepicker_value[1]
 
     # check whether it's valid:
-    # if aform.is_valid():
-    #     #            aform.save()
-    #     # process the data in form.cleaned_data as required
-    #     query = create_twitter_query_using_form_1(aform.cleaned_data['handles_category'],
-    #                                               aform.cleaned_data['handles_typed'],
-    #                                               request.FILES.get('handles_upload'),
-    #                                               # aform.cleaned_data['date']
-    #                                               )
-    #
-    #     print(query)
+        if aform.is_valid():
+        # aform.save()
+        # process the data in form.cleaned_data as required
 
-    ########## 29/04 new code for changing submit functionality ###################
-    # context = {}
-    # if request.method == 'POST':
-    #     uploaded_file = request.FILES['document']
-    #     fs = FileSystemStorage()
-    #     name = fs.save(uploaded_file.name, uploaded_file)
-    #     context['url'] = fs.url(name)
-    # return render(request, 'goingtwitter.html', context)
+            create_twitter_query_using_form_1(aform.cleaned_data['handles_example'],
+                                          aform.cleaned_data['handles_typed'],
+                                          request.FILES.get('handles_upload'))
 
-    ##########################################################################
+    # return redirect('/search/')
+    # # '?startdate=' + start_date1)
+    # print("redirecting")
 
-    form = UploadFileForm(request.POST, request.FILES)
-    if request.method == 'POST' and request.FILES['myfile']:
-        print(request.POST['datetimes'])
-        # collect the date value when its been sent to the server
-        datepicker_value = request.POST['datetimes'].replace(' ', ' ')
-        #
-        # # convert date string format to useable format for tweepy
-        # datepicker_value = datetime.strptime(datepicker_value, '%Y/%m/%d-%Y/%m/%d').strftime('%Y-%m-%d')
-        #
-        # # seperate the string to give individual dates   ************seems to be reading start date as 2020 rather than whole string
-        # #
-        datepicker_value = datepicker_value.split(' - ')
-        start_date1 = datepicker_value[0]
-        end_date1 = datepicker_value[1]
-        # form = UploadFileForm(request.POST, request.FILES)
-        # logger.error('Something went wrong')
+        return render(request, 'smart/model_form_upload.html')
 
-        # if aform.is_valid():
-        #     # aform.save()
-        #     # process the data in form.cleaned_data as required
-        #     query = create_twitter_query_using_form_1(aform.cleaned_data['handles_category'],
-        #                                           aform.cleaned_data['handles_typed'],
-        #                                           request.FILES.get('handles_upload'),
-        #                                           # aform.cleaned_data['date']
-        #                                           )
-        #
-        # print(query)
-        myfile = request.FILES["myfile"]
-        print(myfile)
-        fs = FileSystemStorage()  # save path to be saved
-        print(fs)
-        filename = fs.save(myfile.name, myfile)  # save file name and file
-        uploaded_file_url = fs.url(filename)
-        # print("Sophie", uploaded_file_url.name)
-        # print(uploaded_file_url.size)
-        # return render(request, 'smart/twitter_handles_form.html', {
-        #   'uploaded_file_url': uploaded_file_url
-        # })
-        return redirect('/search/?startdate=' + start_date1)
-        print("redirecting")
     return render(request, 'smart/twitter_handles_form.html', {"aform": aform})
-
-
-# #################################### 29/04 uncomment from here ##########################################
-# output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
-# twitterlive.run_script(start_date1, end_date1, query['terms'], QUERY_TIME_LIMIT, output_file, reps=5)
-# # , duration, start_date , finish_date)
-#
-# tweets_path = Path(f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json')
-# if tweets_path.exists():
-#     tweets = tweets_path.read_text()
-# else:
-#     logger.info("Unable to find file for tweets")
-#     tweets = ""
-#
-# return render(request, 'smart/goingtwitter.html', {'terms': query['terms'], 'tweets': tweets})
-# if a GET (or any other method) we'll create a blank form
-# else:
-#     aform = TwitterhandlesForm()
-#
-# return render(request, 'smart/twitter_handles_form.html', {"aform": aform})
-
-
-# #
 
 
 def search(request):
@@ -262,13 +209,13 @@ def search(request):
     ############# 02/05 ########## for submitting to folder
     # form = UploadFileForm(request.POST, request.FILES)
     if request.method == 'POST' and request.FILES['hatefile']:
-            hatefile = request.FILES["hatefile"]
-            print(hatefile)
-            fs = FileSystemStorage(location='./test/data/abusive_terms')  # save path to be saved
-            print(fs)
-            filename = fs.save(hatefile.name, hatefile)
+        hatefile = request.FILES["hatefile"]
+        print(hatefile)
+        fs = FileSystemStorage(location='./test/data/abusive_terms')  # save path to be saved
+        print(fs)
+        filename = fs.save(hatefile.name, hatefile)
 
-            # save output file data folder
+        # save output file data folder
         # output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
         # # run script
         # twitterlive.run_script(0, 0, query['terms'], QUERY_TIME_LIMIT, output_file, reps=5)
@@ -286,8 +233,7 @@ def search(request):
 
         # if a GET (or any other method) we'll create a blank form
 
-            return render(request, 'smart/goingtwittertwo.html')
-
+        return render(request, 'smart/goingtwittertwo.html')
 
     return render(request, 'smart/model_form_upload.html', {"bform": bform})
 

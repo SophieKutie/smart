@@ -1,8 +1,14 @@
+import csv
 import logging
 from datetime import timedelta, datetime
 
 import pandas as pd
+from django.core.files.base import ContentFile
+from django.core.files.storage import FileSystemStorage, default_storage
+from django.shortcuts import render
 from django.template.defaultfilters import date
+
+from smart.forms import UploadFileForm, TwitterhandlesForm
 
 logger = logging.getLogger(__name__)
 
@@ -42,3 +48,23 @@ def get_hate_terms_from_file_system(csv_file_name: str) -> list:
         logger.error(f"{csv_file_name} file or filepath is empty")
 
     return result
+
+
+
+# def file_handler(request):
+#     incomingfile = request.FILES['file']
+#     default_storage.save("./test/data/user_handles/", ContentFile(incomingfile.read()))
+
+
+def get_uploaded(request):
+    aform = UploadFileForm(request.POST, request.FILES)
+    if request.method == 'POST' and request.FILES['myfile']:
+        myfile = request.FILES["myfile"]
+        print(myfile)
+        fs = FileSystemStorage()  # save path to be saved
+        print(fs)
+        filename = fs.save(myfile.name,    myfile)  # save file name and file
+        uploaded_file_url = fs.url(filename)
+    else:
+        aform = TwitterhandlesForm(request.POST)
+    return render(request, 'twitter_handles_form.html', {'aform': aform})

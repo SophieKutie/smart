@@ -44,14 +44,14 @@ class UploadFileForm(forms.Form):
     file = forms.FileField()
         # upload_to='../test/data/user_handles/')
 
-    t_h_canned = forms.FilePathField(path="media/")
-    canned_field = forms.FilePathField(path="smart/category/")
+    t_h_canned = forms.FilePathField(path="./test/data/user_handles/")
+    canned_field = forms.FilePathField(path="./test/data/abusive_terms/") #"smart/category/")
 
 
 MAPPING = {
-    "1": "category/racisttest.csv",
-    "2": "category/miso.csv",
-    "3": "category/homo.csv",
+    "1": "./test/data/abusive_terms/racisttest.csv",
+    "2": "./test/data/abusive_terms/miso.csv",
+    "3":  "./test/data/abusive_terms/homo.csv" #category/homo.csv",
 
 }
 CHOICES = (
@@ -79,28 +79,20 @@ CHOICES_1 = (
 
 
 
-# def get_now():
-#     return datetime.now().strftime("%d/%m/%Y %H:%M")
-
 class TwitterhandlesForm(forms.Form):
+
+
+    handles_example = forms.FilePathField(path="./test/data/user_handles/", required=False, label={'Alternatively, select an example handles csv file '})
+
+    handles_typed = forms.CharField(widget=forms.Textarea, required=False, label={'Please enter "terms" followed by subject twitter handle(s), seperated by a new line'})
+
     handles_upload = forms.FileField(required=False, allow_empty_file=False,
-                                     widget=forms.ClearableFileInput(attrs={'multiple': True}))
-
-    handles_typed = forms.CharField(widget=forms.Textarea, required=False)
-
-    handles_category = forms.FilePathField(path="media/", required=False)
-
-    # date = forms.DateTimeField(
-    #     input_formats=['%d/%m/%Y %H:%M'],
-    #     widget=forms.DateTimeInput(attrs={
-    #         'class': 'form-control datetimepicker-input',
-    #         'data-target': '#datetimepicker1'
-    #     })
-    # )
+                                      widget=forms.ClearableFileInput(attrs={'multiple': True}))
+    # upload_to = "./test/data/user_handles/",
 
 
 class SearchForm(forms.Form):
-    uploaded = forms.FileField(required=False, allow_empty_file=False, widget=forms.ClearableFileInput(attrs={'multiple': True}))
+   # uploaded = forms.FileField(required=False, allow_empty_file=False, widget=forms.ClearableFileInput(attrs={'multiple': True}))
     typed = forms.CharField(widget=forms.Textarea, required=False)
-    category = forms.FilePathField(path="smart/category/", required=False)
+    category = forms.FilePathField(path="./test/data/abusive_terms/", required=False)
     # returned_handle_tweets_file = forms.FilePathField(path="./test/data/", required=False)
