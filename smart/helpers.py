@@ -8,7 +8,7 @@ from django.core.files.storage import FileSystemStorage, default_storage
 from django.shortcuts import render
 from django.template.defaultfilters import date
 
-from smart.forms import UploadFileForm, TwitterhandlesForm
+from smart.forms import UploadFileForm, TwitterhandlesForm, SearchForm
 
 logger = logging.getLogger(__name__)
 
@@ -56,7 +56,7 @@ def get_hate_terms_from_file_system(csv_file_name: str) -> list:
 #     default_storage.save("./test/data/user_handles/", ContentFile(incomingfile.read()))
 
 
-def get_uploaded(request):
+def do_uploaded(request):
     aform = UploadFileForm(request.POST, request.FILES)
     if request.method == 'POST' and request.FILES['myfile']:
         myfile = request.FILES["myfile"]
@@ -68,3 +68,17 @@ def get_uploaded(request):
     else:
         aform = TwitterhandlesForm(request.POST)
     return render(request, 'twitter_handles_form.html', {'aform': aform})
+
+
+def do_uploaded_for_terms(request):
+    bform = UploadFileForm(request.POST, request.FILES)
+    if request.method == 'POST' and request.FILES['hatefile']:
+        hatefile = request.FILES["hatefile"]
+        print(hatefile)
+        fs = FileSystemStorage(location='./test/data/abusive_terms')  # save path to be saved
+        print(fs)
+        # filename = fs.save(hatefile.name,  hatefile)  # save file name and file
+        # uploaded_file_url = fs.url(filename)
+    else:
+        bform = SearchForm(request.POST)
+    return render(request, 'model_form_upload.html', {'bform': bform})

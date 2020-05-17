@@ -155,9 +155,13 @@ class MyStreamListener(StreamListener):
 
 # the following goes through the list of terms, which is a list of list
 # each sublist takes about 6 minutes, you can change the time limit for each list by resetting the time_limit variable value
-# we feed all the sublists (the full terms in the csv file) in onr hous
+# we feed all the sublists (the full terms in the csv file) in one hours
+
+
 
 def run_script(start_date1, end_date1, term_list, time_limit=360,  output_file='./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json', reps=1000):
+
+
     if start_date1 != 0 and end_date1 != 0:
         start_date1 = time.strptime(start_date1, "%Y-%m-%d")
                                     # "%d/%m/%Y")
@@ -165,12 +169,12 @@ def run_script(start_date1, end_date1, term_list, time_limit=360,  output_file='
 
     #    while  start date > end date instead of for loop
     for i in range(1, reps):
-        print('Number of lists of terms to process: %d\n' % len(term_list))
+        print('Number of lists of terms to process: %d\n' % len(str(term_list)))
         print(i, f' out of  {reps}  repetitions.\n')
         k = 0
         for terms in term_list:
             k += 1
-            print('\t', k, ' out of  ', len(term_list), '  sets of terms.\n')
+            print('\t', k, ' out of  ', len(str(term_list)), '  sets of terms.\n')
             print('Start time on the following list %s\n' % time.strftime("%Y-%m-%d, %H:%M:%S"))
             print(terms, '\n')
             start_time = time.time()
@@ -240,6 +244,5 @@ if __name__ == "__main__":
     # import sys
     #
     # folder, number_of_terms = sys.args
-
-    # main(folder="xyz", number_of_terms=1)
     main()
+

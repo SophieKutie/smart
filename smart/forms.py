@@ -61,19 +61,19 @@ CHOICES = (
 
 )
 
-MAPPING_1 = {
-    "1": "./test/data/20200415-011333_tweets.json",
-    "2": "./test/data/20200415-011333_tweets.json ",
-    "3": "./test/data/20200415-011333_tweets.json",
-
-}
-
-CHOICES_1 = (
-    ("1", "#meghan2020/04/15"),
-    ("2", "#"),
-    ("3", "#"),
-
-)
+# MAPPING_1 = {
+#     "1": "./test/data/20200415-011333_tweets.json",
+#     "2": "./test/data/20200415-011333_tweets.json ",
+#     "3": "./test/data/20200415-011333_tweets.json",
+#
+# }
+#
+# CHOICES_1 = (
+#     ("1", "#meghan2020/04/15"),
+#     ("2", "#"),
+#     ("3", "#"),
+#
+# )
 
 
 
@@ -92,7 +92,7 @@ class TwitterhandlesForm(forms.Form):
 
 
 class SearchForm(forms.Form):
-   # uploaded = forms.FileField(required=False, allow_empty_file=False, widget=forms.ClearableFileInput(attrs={'multiple': True}))
+    uploaded = forms.FileField(required=False, allow_empty_file=False, widget=forms.ClearableFileInput(attrs={'multiple': True}))
     typed = forms.CharField(widget=forms.Textarea, required=False)
     category = forms.FilePathField(path="./test/data/abusive_terms/", required=False)
     # returned_handle_tweets_file = forms.FilePathField(path="./test/data/", required=False)

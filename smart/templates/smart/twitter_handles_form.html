@@ -2,12 +2,13 @@
 
 {% block content %}
 
-<h3>To create a new search, you may do any of the following: </h3>
-<li> Submit your precompiled csv files containing terms and twitter handles via the Upload section</li>
-<li> Copy and paste your handles in the text area. Begin by typing 'terms' at the top and each entry should be separated
-    by a new line,
-</li>
-<li> Select some precompiled csv files from the drop down menu</li>
+<h1>To create a new search, you may do any of the following: </h1>
+
+<br>
+<h5><li> Submit your precompiled csv files containing terms and twitter handles via the Upload section</li> </h5>
+<h5><li> Copy and paste your handles in the text area. Begin by typing 'terms' at the top and each entry should be separated
+    by a new line</li></h5>
+ <h5><li>Select some precompiled csv files from the drop down menu </li></h5>
 <br>
 <br>
 
@@ -20,50 +21,64 @@
         {% csrf_token %}
 
         <label style="display: block;">
-            Date Range Selection for Retro Search
+            Select duration for Retrospective Search:
         </label>
         <input type="text" name="datetimes"/><br><br>
 
-        <button type="button" id="dropdownMenu5" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" style="display: block;">
-            Date Range Selection for Live Search
-        </button>
+<!--        <button type="button" id="dropdownMenu5" data-toggle="dropdown"-->
+<!--                aria-haspopup="true" aria-expanded="false" style="display: block;">-->
+<!--            Date Range Selection for Live Search-->
+<!--        </button>-->
+        <label style="display: block;">
+            Select duration for Live Search:
+        </label>
         <input type="text" name="datetimes"/><br><br>
     </form>
 </div>
 
+
+<br>
+<hr>
     <div>
         <form action="/handles_search/" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-<!--            <label>Select an example file: </label>-->
-            {{ aform.handles_examples.as_p}}
-<!--            <input type = "file" name="file">-->
-             <input type="submit" name="{{aform.prefix}}" value="Submit">
+            <label for="id_category">Examples:</label>
+            <select name="category" id="id_category">
+              <option value="" selected="">---------</option>
+
+              <option value="./test/data/user_handles/meghan.csv">meghan.csv</option>
+
+            </select>
+
+             <input type="submit" name="{{aform.prefix}}" value="Save">
         </form>
     </div>
 <br>
+<br>
+<hr>
 <br>
     <div>
         <form action="/handles_search/" method="post" enctype="multipart/form-data">
             {% csrf_token %}
 
-<!--            <label>Enter names manually: </label>-->
+            <label>Enter subject manually in text area: </label>
             {{ aform.handles_typed}} <br>
-            <input type="submit" name="{{aform.prefix}}" value="Submit">
+            <input type="submit" name="{{aform.prefix}}" value="Save">
 
         </form>
     </div>
 
 <br>
 <br>
-
-
+<hr>
+<br>
     <div>
         <form action="/handles_search/" method="post" enctype="multipart/form-data">
             {% csrf_token %}
+            <label for="id_category">Upload your Own:</label>
             {{ aform.handles_upload}}
 
-            <input type="submit" name="{{aform.prefix}}" value="Submit">
+            <input type="submit" name="{{aform.prefix}}" value="Save">
         </form>
 
     </div>

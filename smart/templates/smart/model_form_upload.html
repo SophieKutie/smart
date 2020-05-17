@@ -7,19 +7,73 @@
 <h6>Now you may submit some key terms</h6>
 {{startdate}}
 {{endate}}
-<div class="keyterms">
-    <form action="/search/" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ bform.as_p}}
+<!--<div class="keyterms">-->
+<!--    <form action="/search/" method="post" enctype="multipart/form-data">-->
+<!--        {% csrf_token %}-->
+<!--        {{ bform.as_p}}-->
 
-        <input type="file" name="hatefile">
+<!--&lt;!&ndash;        <input type="file" name="hatefile">&ndash;&gt;-->
 
-        <input type="submit" name="{{bform.prefix}}" value="Submit">
+<!--        <input type="submit" name="{{bform.prefix}}" value="Submit">-->
 
-    </form>
-</div>
+<!--    </form>-->
+<!--</div>-->
 
 <br>
+
+
+
+<br>
+<hr>
+    <div>
+        <form action="/search/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="id_category">Examples:</label>
+            <select name="category" id="id_category">
+              <option value="" selected="">---------</option>
+
+              <option value="./test/data/abusive_terms/homo.csv">homo.csv</option>
+              <option value="./test/data/abusive_terms/miso.csv">miso.csv</option>
+              <option value="./test/data/abusive_terms/racisttest.csv">racisttest.csv</option>
+
+            </select>
+
+             <input type="submit" name="{{bform.prefix}}" value="Save">
+        </form>
+    </div>
+<br>
+<br>
+<hr>
+<br>
+    <div>
+        <form action="/search/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <label>Enter terms manually in text area: </label>
+            {{ bform.typed}} <br>
+            <input type="submit" name="{{bform.prefix}}" value="Save">
+
+        </form>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+    <div>
+        <form action="/search/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="id_category">Upload your Own:</label>
+            {{ bform.uploaded}}
+
+            <input type="submit" name="{{bform.prefix}}" value="Save">
+        </form>
+
+    </div>
+
+<br>
+<br>
+
 
 
 <!--  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">-->
