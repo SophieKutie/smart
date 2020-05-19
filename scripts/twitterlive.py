@@ -81,7 +81,7 @@ authorization.set_access_token(accesstoken, accesstokensecret)
 
 class MyStreamListener(StreamListener):
 
-    def __init__(self, output_file, time_limit):
+    def __init__(self,  output_file, time_limit):
         self.output_file = output_file
         self.siesta = 0
         self.nightnight = 0
@@ -157,11 +157,7 @@ class MyStreamListener(StreamListener):
 # each sublist takes about 6 minutes, you can change the time limit for each list by resetting the time_limit variable value
 # we feed all the sublists (the full terms in the csv file) in one hours
 
-
-
 def run_script(start_date1, end_date1, term_list, time_limit=360,  output_file='./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json', reps=1000):
-
-
     if start_date1 != 0 and end_date1 != 0:
         start_date1 = time.strptime(start_date1, "%Y-%m-%d")
                                     # "%d/%m/%Y")
@@ -169,12 +165,12 @@ def run_script(start_date1, end_date1, term_list, time_limit=360,  output_file='
 
     #    while  start date > end date instead of for loop
     for i in range(1, reps):
-        print('Number of lists of terms to process: %d\n' % len(str(term_list)))
+        print('Number of lists of terms to process: %d\n' % len(term_list))
         print(i, f' out of  {reps}  repetitions.\n')
         k = 0
         for terms in term_list:
             k += 1
-            print('\t', k, ' out of  ', len(str(term_list)), '  sets of terms.\n')
+            print('\t', k, ' out of  ', len(term_list), '  sets of terms.\n')
             print('Start time on the following list %s\n' % time.strftime("%Y-%m-%d, %H:%M:%S"))
             print(terms, '\n')
             start_time = time.time()
@@ -214,11 +210,11 @@ def run_script(start_date1, end_date1, term_list, time_limit=360,  output_file='
 def main():
     # read the terms from a folder
     # the terms_files directory should include one or more csv files with terms in them
-    terms_file = os.listdir('./test/data/abusive_terms/')  # '../media')  #ask Sardar for second location function
+    terms_file = os.listdir('./test/data/user_handles/')  # '../media')  #ask Sardar for second location function
     print('term files', terms_file)
     terms = []
     for i in terms_file:
-        terms += get_hate_terms("./test/data/abusive_terms/" + i)
+        terms += get_hate_terms("./test/data/user_handles/" + i)
 
     print(terms)
 

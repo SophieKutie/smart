@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[1]:
-
+# from django.conf.project_template.manage import main
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream

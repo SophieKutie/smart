@@ -175,7 +175,7 @@ def handles_search(request):
     # save output file to data folder
             output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
     # # run script
-            twitter_live2.run_script(0, 0,    QUERY_TIME_LIMIT)
+            twitterlive.run_script(0, 0, output_file, reps=5)
     # , duration, start_date1 , end_date1)
 
     # tweet path to read from if tweets were fetched
@@ -240,9 +240,9 @@ def search(request):
                                               request.FILES.get('upload'))
 
         # save output file to data folder
-        # output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
+       # output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
         # # run script
-        twitterlive.run_script(0, 0,  QUERY_TIME_LIMIT)
+        #twitterlive.run_script(0, 0, reps=5, output_file)
         # , duration, query['terms'], start_date , reps=5, output_file  finish_date)
 
         # tweet path to read from if tweets were fetched
