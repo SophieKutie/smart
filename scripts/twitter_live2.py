@@ -221,9 +221,9 @@ from datetime import datetime
 # output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
 # run_script(term_list, output_file=output_file, reps=5)
 
-if __name__ == "__main__":
-
-    main()
+# if __name__ == "__main__":
+#
+#     main()
 
 # In[ ]:
 

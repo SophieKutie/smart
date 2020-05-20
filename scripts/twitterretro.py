@@ -27,7 +27,7 @@ import csv
 
 
 '''
-get a list of hateful terms. These ae collected from hatebase.org using the hatespeech-vocabulary-collection script 
+get a list of hateful terms. These ae collected from hatebase.org using the hatespeech-vocabulary-collection script
 stroed in hatespeech-terms.csv file
 csv_file_name should include the full path to the file
 the file should be formatted as one column labelled 'term' and as many terms as required
@@ -49,13 +49,13 @@ def get_hate_terms(csv_file_name):
     return terms['terms'].astype(str).values.tolist()
 
 
-# hate_terms = get_hate_terms('./data/abusive_terms.csv')
-cons = get_hate_terms('./test/data/abusive_terms.csv')
-ind = get_hate_terms('./test/data/abusive_terms.csv')
-labour = get_hate_terms('./test/data/abusive_terms.csv')
-lib_dem = get_hate_terms('test/data/abusive_terms.csv')
+terms = get_hate_terms('./test/data/user_handles/meghan.csv')
+# cons = get_hate_terms('./test/data/abusive_terms.csv')
+# ind = get_hate_terms('./test/data/abusive_terms.csv')
+# labour = get_hate_terms('./test/data/abusive_terms.csv')
+# lib_dem = get_hate_terms('test/data/abusive_terms.csv')
 
-terms = cons + ind + labour + lib_dem
+# terms = cons + ind + labour + lib_dem
 
 '''
 Twitter only accepts n number of terms at a time
@@ -98,7 +98,7 @@ def get_time_taken(start_time):
 
 SEARCH_TERM = 'pizza'
 GEOCODE = '40,74,10km'
-cons = get_hate_terms('./data/conservative.csv')
+terms = get_hate_terms('./test/data/user_handles/meghan.csv')
 
 for tweet in tweepy.Cursor(api.search, q=SEARCH_TERM, count=100, lang="en", since="2019-12-09",
                            until="2019-12-15").items():
@@ -106,46 +106,59 @@ for tweet in tweepy.Cursor(api.search, q=SEARCH_TERM, count=100, lang="en", sinc
 # In[3]:
 
 
-accesstoken = '98886733-f5M5aYz2w3zivEILEHuFfvrDLXhYkYwL1xvgr9c9y'
-accesstokensecret = 'uOwbZGLE3WyevrWkKPaJu9rjtSY5IZJ3TE7pVJU8tp9ud'
-consumerkey = '2lWIAi4Z6UKKBxv33YTtpqilM'
-consumersecret = 'm7uNftueKNzg8LTG6s8WHDkMGII3DBXoXbbySnjzS0dHS6oTll'
+accesstoken = '1192071683483557888-JsajbXeIZV4yO7heVLBiyKoLmcwE2D'
+accesstokensecret = 'iHopL1lf1l7vYQw13sbtNpumfRyjJ3JOoPXMwtadj8uSm'
+consumerkey = 'iHopL1lf1l7vYQw13sbtNpumfRyjJ3JOoPXMwtadj8uSm'
+consumersecret = 'GBmKtYX2wrGVDxbGn2kPbYbuD4wUGEq2i6RVI1dzT8jCmgGxYX'
 
 authorization = OAuthHandler(consumerkey, consumersecret)
 authorization.set_access_token(accesstoken, accesstokensecret)
 
-cons = get_hate_terms('./data/conservative.csv')
-ind = get_hate_terms('./data/independent.csv')
-labour = get_hate_terms('./data/labour.csv')
-lib_dem = get_hate_terms('./data/lib_dem.csv')
+# cons = get_hate_terms('./data/conservative.csv')
+# ind = get_hate_terms('./data/independent.csv')
+# labour = get_hate_terms('./data/labour.csv')
+# lib_dem = get_hate_terms('./data/lib_dem.csv')
 
-terms = cons + ind + labour + lib_dem
+terms = get_hate_terms('./test/data/user_handles/meghan.csv')
 
 print(len(terms), terms)
 time_limit = 15 * 60
 jfile = open('./data/ua3.json', 'a')
 
 api = tweepy.API(authorization, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, retry_delay=5)
-for i in terms:
-    try:
-        c = tweepy.Cursor(api.search, q=i, count=100, lang="en",
-                          since="2019-12-9",
-                          until="2019-12-17").items()
-        print(i)
-        start_time = time.time()
-        for tweet in c:
-            json.dump(tweet._json, jfile)
-            jfile.write("%s" % '\n')
-        if (time.time() - start_time) < time.time() + time_limit:
-            # print('------------sleeping for 10 seconds------------------')
-            print('reached limit')
-            time.sleep(3)
+def run_script(start_date1, end_date1, output_file='./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json',
+               reps=1000):
+    if start_date1 != 0 and end_date1 != 0:
+        start_date1 = time.strptime(start_date1, "%Y-%m-%d")
+        end_date1 = time.strptime(end_date1, "%Y-%m-%d")
 
-    except Exception as e:
-        print(e)
-        print(e.__doc__)
+    for i in terms:
+        try:
+            c = tweepy.Cursor(api.search, q=i, count=100, lang="en",
+                              since="2019-12-9",
+                              until="2019-12-17").items()
+            print(i)
+            start_time = time.time()
+            for tweet in c:
+                json.dump(tweet._json, jfile)
+                jfile.write("%s" % '\n')
+            if (time.time() - start_time) < time.time() + time_limit:
+                # print('------------sleeping for 10 seconds------------------')
+                print('reached limit')
+                time.sleep(3)
 
-    # In[ ]:
+        except Exception as e:
+            print(e)
+            print(e.__doc__)
+
+
+
+
+# In[ ]:
+
+
+# In[ ]:
+
 
 # In[ ]:
 
@@ -156,11 +169,40 @@ for i in terms:
 # In[ ]:
 
 
-# In[ ]:
+def main():
+    # read the terms from a folder
+    # the terms_files directory should include one or more csv files with terms in them
+    terms_file = os.listdir('./test/data/user_handles/')  # '../media')  #ask Sardar for second location function
+    print('term files', terms_file)
+    terms = []
+    for i in terms_file:
+        terms += get_hate_terms("./test/data/user_handles/" + i)
+
+    print(terms)
+
+    #
+    # terms = get_hate_terms(terms)
+    term_list = list(get_list_of_list(terms, 10))
+    time_limit = 360  # in seconds
+
+    term_list = list(get_list_of_list(terms, 10))
+    print('Number of lists of terms to process: %d' % len(term_list))
+    for t in term_list:
+        print('Start time on the following list %s of length %d' % (time.strftime("%Y-%m-%d, %H:%M:%S"), len(t)))
+        print(t)
+
+    print('Finished time %s' % time.strftime("%Y-%m-%d, %H:%M:%S"))
+
+    from datetime import datetime
+    output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
+    run_script(term_list, output_file=output_file, reps=5)
 
 
-# In[ ]:
-
+if __name__ == "__main__":
+    # import sys
+    #
+    # folder, number_of_terms = sys.args
+    main()
 
 
 

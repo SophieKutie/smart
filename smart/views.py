@@ -8,7 +8,7 @@ from django.shortcuts import render, redirect
 from bootstrap_datepicker_plus import DatePickerInput, TimePickerInput
 from django.urls import reverse
 
-from scripts import twitterlive, twitter_live2
+from scripts import twitterlive, twitter_live2, twitterretro
 from .forms import TwitterhandlesForm, SearchForm, UploadFileForm, DocumentForm
 from .helpers import get_hate_terms_from_file_system, do_uploaded, do_uploaded_for_terms
 # file_handler
@@ -174,8 +174,10 @@ def handles_search(request):
 
     # save output file to data folder
             output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
-    # # run script
-            twitterlive.run_script(0, 0, output_file, reps=5)
+    # # run live script
+            # twitterlive.run_script(0, 0, output_file, reps=5)
+            twitterretro.run_script(0, 0, output_file, reps=5)
+
     # , duration, start_date1 , end_date1)
 
     # tweet path to read from if tweets were fetched
