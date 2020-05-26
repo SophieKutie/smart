@@ -7,7 +7,7 @@
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
-from tweepy import API as api
+from tweepy import API
 from tweepy import Cursor
 import tweepy
 import time
@@ -99,20 +99,21 @@ def get_time_taken(start_time):
 SEARCH_TERM = 'pizza'
 GEOCODE = '40,74,10km'
 terms = get_hate_terms('./test/data/user_handles/meghan.csv')
-
-for tweet in tweepy.Cursor(api.search, q=SEARCH_TERM, count=100, lang="en", since="2019-12-09",
-                           until="2019-12-15").items():
+accesstoken = '1192071683483557888-JsajbXeIZV4yO7heVLBiyKoLmcwE2D'
+accesstokensecret = 'iHopL1lf1l7vYQw13sbtNpumfRyjJ3JOoPXMwtadj8uSm'
+consumerkey = '4nmllrY1s4k2x8ClNEMA4Ohvd'
+consumersecret = 'GBmKtYX2wrGVDxbGn2kPbYbuD4wUGEq2i6RVI1dzT8jCmgGxYX'
+authorization = OAuthHandler(consumerkey, consumersecret)
+authorization.set_access_token(accesstoken, accesstokensecret)
+api = tweepy.API(authorization, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, retry_delay=5)
+results = tweepy.Cursor(api.search, q=SEARCH_TERM, count=100, lang="en", since_id="2019-12-09",
+                           until="2019-12-15")
+for tweet in results.items():
     print(tweet)
 # In[3]:
 
 
-accesstoken = '1192071683483557888-JsajbXeIZV4yO7heVLBiyKoLmcwE2D'
-accesstokensecret = 'iHopL1lf1l7vYQw13sbtNpumfRyjJ3JOoPXMwtadj8uSm'
-consumerkey = 'iHopL1lf1l7vYQw13sbtNpumfRyjJ3JOoPXMwtadj8uSm'
-consumersecret = 'GBmKtYX2wrGVDxbGn2kPbYbuD4wUGEq2i6RVI1dzT8jCmgGxYX'
 
-authorization = OAuthHandler(consumerkey, consumersecret)
-authorization.set_access_token(accesstoken, accesstokensecret)
 
 # cons = get_hate_terms('./data/conservative.csv')
 # ind = get_hate_terms('./data/independent.csv')
@@ -123,9 +124,8 @@ terms = get_hate_terms('./test/data/user_handles/meghan.csv')
 
 print(len(terms), terms)
 time_limit = 15 * 60
-jfile = open('./data/ua3.json', 'a')
+jfile = open('./test/data/tweets.json', 'a')
 
-api = tweepy.API(authorization, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, retry_delay=5)
 def run_script(start_date1, end_date1, output_file='./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json',
                reps=1000):
     if start_date1 != 0 and end_date1 != 0:
@@ -139,18 +139,23 @@ def run_script(start_date1, end_date1, output_file='./test/data/{datetime.now().
                               until="2019-12-17").items()
             print(i)
             start_time = time.time()
+            if c.num_tweets < 1:
+                print(f"Cursor returned no tweets for '{i}' search")
             for tweet in c:
                 json.dump(tweet._json, jfile)
                 jfile.write("%s" % '\n')
             if (time.time() - start_time) < time.time() + time_limit:
                 # print('------------sleeping for 10 seconds------------------')
-                print('reached limit')
+                print(f'Reached limit{time_limit}waiting for twitter response')
                 time.sleep(3)
 
         except Exception as e:
             print(e)
             print(e.__doc__)
 
+
+
+#time limitnot working, reached limit message persists
 
 
 
