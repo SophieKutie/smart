@@ -14,6 +14,8 @@ urlpatterns = [
 
     path('handles_search/',  views.handles_search, name='handles_search'),
 
+    path('post_date/',  views.post_date, name='post_date'),
+
     path('goingtwitter/', views.goingtwitter,  name='goingtwitter'),
 
     path('goingtwittertwo/', views.goingtwittertwo,  name='goingtwittertwo'),

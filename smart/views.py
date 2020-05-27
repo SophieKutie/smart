@@ -9,7 +9,7 @@ from bootstrap_datepicker_plus import DatePickerInput, TimePickerInput
 from django.urls import reverse
 
 from scripts import twitterlive, twitter_live2, twitterretro
-from .forms import TwitterhandlesForm, SearchForm, UploadFileForm, DocumentForm
+from .forms import TwitterhandlesForm, SearchForm, UploadFileForm, DocumentForm, DateForm, DateTextForm
 from .helpers import get_hate_terms_from_file_system, do_uploaded, do_uploaded_for_terms
 # file_handler
 from pathlib import Path
@@ -133,6 +133,51 @@ def create_twitter_query_using_form(category, typed, uploaded) -> dict:
     return query
 
 
+def post_date(request):
+    # if this is a POST request we need to process the form data
+    dform = DateTextForm(request.POST)
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+
+        # check whether it's valid:
+        if dform.is_valid():
+            # process the data in form.cleaned_data as required
+            # ...
+
+            # redirect to a new URL:
+
+            #dform = DateTextForm()
+            date = (dform.cleaned_data['start_date_box'],
+                          dform.cleaned_data['end_date_box'])
+
+
+            date_array = (request.POST['start_date'], request.POST['end_date'])
+
+            print(date_array)
+            # i just uncommented this afte dae array works
+            #datepicker_value = date_array.split(' - ')
+            start_date1 = date_array[0]
+            end_date1 = date_array[1]
+
+            # write date to csv
+            s = (start_date1, end_date1)
+            dateFile = open('test/data/datefile.csv', 'w', newline=' ')
+            wr = csv.writer(dateFile)
+            wr.writerow(s)
+
+            #return 'thanks'
+
+    # if a GET (or any other method) we'll create a blank form
+        else:
+            dform = DateTextForm()
+    return redirect('/handles_search/')
+    # return render(request, 'twitter_handles_form.html', {'dform': dform})
+
+
+
+
+
+
 def handles_search(request):
     # template_name = 'smart/twitter_handles_form.html'
     # return render(request, 'smart/twitter_handles_form.html')
@@ -146,18 +191,21 @@ def handles_search(request):
     # # testing picker post request 29/04/2020
 
     # print(datepicker_value[1])
-    # print(request.POST['datetimes'])
+    #     print(request.POST['datetimes'])
     # collect the date value when its been sent to the server
     #     datepicker_value = request.POST['datetimes'].replace(' ', ' ')
+        #datepicker_value = request.POST.get('datetimes').replace(' ', ' ')
     #
     # # convert date string format to useable format for tweepy
-    #     datepicker_value = datetime.strptime(datepicker_value, '%Y/%m/%d-%Y/%m/%d').strftime('%Y-%m-%d')
+        #datepicker_value = datetime.strptime(datepicker_value, '%Y/%m/%d-%Y/%m/%d').strftime('%Y-%m-%d')
     #
     # # seperate the string to give individual dates   ************seems to be reading start date as 2020 rather than whole string
     # #
     #     datepicker_value = datepicker_value.split(' - ')
     #     start_date1 = datepicker_value[0]
     #     end_date1 = datepicker_value[1]
+
+
 
     # check whether it's valid:
         if aform.is_valid():
@@ -176,6 +224,8 @@ def handles_search(request):
             output_file = f'./test/data/{datetime.now().strftime("%Y%m%d-%H%M%S")}_tweets.json'
     # # run live script
             # twitterlive.run_script(0, 0, output_file, reps=5)
+
+
             twitterretro.run_script(0, 0, output_file, reps=5)
 
     # , duration, start_date1 , end_date1)

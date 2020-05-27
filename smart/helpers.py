@@ -6,9 +6,10 @@ import pandas as pd
 from django.core.files.base import ContentFile
 from django.core.files.storage import FileSystemStorage, default_storage
 from django.shortcuts import render
-from django.template.defaultfilters import date
 
-from smart.forms import UploadFileForm, TwitterhandlesForm, SearchForm
+from django.http import HttpResponseRedirect
+
+from smart.forms import UploadFileForm, TwitterhandlesForm, SearchForm, DateForm
 
 logger = logging.getLogger(__name__)
 
@@ -70,6 +71,26 @@ def do_uploaded(request):
     return render(request, 'twitter_handles_form.html', {'aform': aform})
 
 
+
+def get_date(request):
+    # if this is a POST request we need to process the form data
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        dform = DateForm(request.POST)
+        # check whether it's valid:
+        if dform.is_valid():
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            return 'thanks'
+
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        dform = DateForm()
+
+    return render(request, 'twitter_handles_form.html', {'dform': dform})
+
+
 def do_uploaded_for_terms(request):
     bform = UploadFileForm(request.POST, request.FILES)
     if request.method == 'POST' and request.FILES['hatefile']:
@@ -82,3 +103,11 @@ def do_uploaded_for_terms(request):
     else:
         bform = SearchForm(request.POST)
     return render(request, 'model_form_upload.html', {'bform': bform})
+
+
+def time_format():
+
+    # s = datepicker_value[0,1]
+    dateFile = open('test/data/datefile.csv', 'w', newline='')
+    wr = csv.writer(dateFile)
+    wr.writerow()

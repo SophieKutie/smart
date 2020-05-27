@@ -18,19 +18,30 @@ from django import forms
 #         }
 
 
-class DateForm(forms.DateInput):
-    date = forms.DateTimeField(
-        input_formats=['%d/%m/%Y %H:%M'],
-        widget=forms.DateTimeInput(attrs={
-            'class': 'form-control datetimepicker-input',
-            'data-target': '#datetimepicker1'
-        })
-    )
+# class DateForm(forms.DateInput):
+#     date = forms.DateTimeField(
+#         input_formats=['%d/%m/%Y %H:%M'],
+#         widget=forms.DateTimeInput(attrs={
+#             'class': 'form-control datetimepicker-input',
+#             'data-target': '#datetimepicker1'
+#         })
+#     )
+
+class DateTextForm(forms.Form):
+    #start_date_box = forms.CharField(widget=forms.Textarea(attrs={'rows': '1', 'cols': '40'}), required=False)
+    # end_date_box = forms.CharField(widget=forms.Textarea(attrs={'rows': '1', 'cols': '40'}), required=False)
+    start_date_box = forms.DateTimeField(
+        input_formats=['%Y-%m-%d %H:%M'],
+        widget=forms.DateTimeInput(attrs={'rows': '1', 'cols': '40'}), required=False)
+
+    end_date_box= forms.DateTimeField(
+        input_formats=['%Y-%m-%d %H:%M'],
+        widget=forms.DateTimeInput(attrs={'rows': '1', 'cols': '40'}), required=False)
 
 
 class Meta:
     model = DateForm
-    fields = ["date", ]
+    fields = ["date"]
 
 
 class DocumentForm(forms.ModelForm):
@@ -76,6 +87,7 @@ CHOICES = (
 # )
 
 
+# date_box = forms.CharField(widget=forms.Textarea(attrs={'rows': '1', 'cols': '40'}), required=False)
 
 
 
@@ -90,9 +102,9 @@ class TwitterhandlesForm(forms.Form):
                                       widget=forms.ClearableFileInput(attrs={'multiple': True}))
     # upload_to = "./test/data/user_handles/",
 
-
 class SearchForm(forms.Form):
     uploaded = forms.FileField(required=False, allow_empty_file=False, widget=forms.ClearableFileInput(attrs={'multiple': True}))
     typed = forms.CharField(widget=forms.Textarea, required=False)
     category = forms.FilePathField(path="./test/data/abusive_terms/", required=False)
+
     # returned_handle_tweets_file = forms.FilePathField(path="./test/data/", required=False)

@@ -99,10 +99,12 @@ def get_time_taken(start_time):
 SEARCH_TERM = 'pizza'
 GEOCODE = '40,74,10km'
 terms = get_hate_terms('./test/data/user_handles/meghan.csv')
+
 accesstoken = '1192071683483557888-JsajbXeIZV4yO7heVLBiyKoLmcwE2D'
 accesstokensecret = 'iHopL1lf1l7vYQw13sbtNpumfRyjJ3JOoPXMwtadj8uSm'
 consumerkey = '4nmllrY1s4k2x8ClNEMA4Ohvd'
 consumersecret = 'GBmKtYX2wrGVDxbGn2kPbYbuD4wUGEq2i6RVI1dzT8jCmgGxYX'
+
 authorization = OAuthHandler(consumerkey, consumersecret)
 authorization.set_access_token(accesstoken, accesstokensecret)
 api = tweepy.API(authorization, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, retry_delay=5)
@@ -120,7 +122,7 @@ for tweet in results.items():
 # labour = get_hate_terms('./data/labour.csv')
 # lib_dem = get_hate_terms('./data/lib_dem.csv')
 
-terms = get_hate_terms('./test/data/user_handles/meghan.csv')
+terms = get_hate_terms('./test/data/abusive_terms/homo.csv')
 
 print(len(terms), terms)
 time_limit = 15 * 60
@@ -155,7 +157,7 @@ def run_script(start_date1, end_date1, output_file='./test/data/{datetime.now().
 
 
 
-#time limitnot working, reached limit message persists
+#time limit not working, reached limit message persists
 
 
 
