@@ -161,7 +161,7 @@ def post_date(request):
 
             # write date to csv
             s = (start_date1, end_date1)
-            dateFile = open('test/data/datefile.csv', 'w', newline=' ')
+            dateFile = open('test/data/datefile.csv', 'w', newline='')
             wr = csv.writer(dateFile)
             wr.writerow(s)
 
