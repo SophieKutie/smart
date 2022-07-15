@@ -42,7 +42,7 @@ cytoolz==0.10.0
 dask==2.5.2
 decorator==4.4.0
 defusedxml==0.6.0
-distributed==2.5.2
+distributed==2021.10.0
 -e git+https://github.com/django/django.git@41a3b3d18647b258331104520e76f977406c590d#egg=Django
 django-background-tasks==1.2.5
 django-bootstrap-datepicker-plus==3.0.5
